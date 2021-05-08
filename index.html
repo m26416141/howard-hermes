@@ -12,6 +12,8 @@
 			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
 			crossorigin="anonymous"
 		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" /> -->
 		<link rel="stylesheet" href="public/css/home.css" />
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script
@@ -27,8 +29,10 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Howard Hermes</a>
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img src="assets/img/Logo.png" height="130" class="d-inline-block align-top" alt="" />
+			</a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -43,13 +47,22 @@
 
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							>Who We Are
+							<!-- <span class="sr-only">(current)</span> --></a
+						>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#">Services</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Careers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+					<!-- <li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Dropdown </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="#">Action</a>
@@ -57,29 +70,78 @@
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">Something else here</a>
 						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
+					</li> -->
 				</ul>
-				<form class="form-inline my-2 my-lg-0">
+				<!-- <form class="form-inline my-2 my-lg-0">
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
+				</form> -->
 			</div>
 		</nav>
 		<div class="container-fluid">
-			<div class="row">
-				<div class="col col-introduction" style="background-color: aqua">
+			<div class="row row-introduction">
+				<div class="col-sm-12 col-introduction" style="background-color: white">
 					<div class="content-1-introduction">
-						<h1>Strategy</h1>
-						<h1>Solution</h1>
-						<h1>Sustainability</h1>
+						<p class="intro-moto">Strategy - Solution - Sustainability</p>
 						<!-- <p>Strategy<br />Solution<br />Sustainability</p> -->
 					</div>
 				</div>
-				<div class="col" style="background-color: bisque">
-					<div>right</div>
+				<div class="col-sm-12 col-introduction-2" style="background-color: white">
+					<hr style="background-color: black; margin: 0px 100px 40px 100px" />
+					<a href="#" style="color: #380139; font-weight: 300; font-size: 15px; padding-bottom: 10px">Our Purpose -></a>
+					<p class="intro-definition" style="margin: 10px 20px 50px 20px">
+						To transform organization into Excelent Organization by partnering <br />with our clients to build Mindful Leadership across all platforms.
+					</p>
+				</div>
+			</div>
+			<div class="row row-introduction-2">
+				<div class="col-sm-6 col-intro-2-pict" style="background-color: wheat">
+					<img class="intro-2-img" src="assets/img/hourglass.jpeg" alt="" />
+				</div>
+				<div class="col-sm-6 col-intro-2-desc" style="background-color: #380139">
+					<p style="color: white; font-weight: 700; font-size: 50px; padding-bottom: 20px">Our History</p>
+					<p style="color: white; font-weight: 300; padding-bottom: 20px">
+						Being present in today's disruptive era, where things are shifting rapidly, requires us to be agile. Not only that, the organic nature of the organization, consisting of many
+						mindsets that come from each member of the organization, results in a fragmented organization focus. <br />
+						Organization with a fragmented focus will not be able to survive the long term, therefore, Howard Hermes, was founded to help organizations stay focused on carrying out a
+						planned and measured transformations.
+					</p>
+					<a href="#">Explore our insights on organization</a>
+				</div>
+			</div>
+			<div class="row row-corporate-value" style="padding: 100px 150px 20px 150px">
+				<div class="col-sm-3" style="width: 100%">
+					<h4 style="font-weight: 700">CORPORATE VALUE</h4>
+				</div>
+				<div class="col-sm-9"><hr style="background-color: black" /></div>
+			</div>
+			<div class="row row-corporate-value" style="padding: 0px 150px 70px 150px">
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img-top" src="assets/img/eye.jpeg" alt="" style="height: 200px; width: 100%; object-fit: cover; margin-bottom: 30px" />
+							<h4 class="card-title" style="margin-bottom: 30px; font-weight: 700">1 Vision</h4>
+							<p>To become a company that is respected in various bussiness fields known to make positive impacts on shareholders, the environment and the nation.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img-top" src="assets/img/heart.jpeg" alt="" style="height: 200px; width: 100%; object-fit: cover; margin-bottom: 30px" />
+							<h4 class="card-title" style="margin-bottom: 30px; font-weight: 700">1 Heart</h4>
+							<p>Working with the right attitude, manner and response.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<div class="card-body">
+							<img class="card-img-top" src="assets/img/idea.jpeg" alt="" style="height: 200px; width: 100%; object-fit: cover; margin-bottom: 30px" />
+							<h4 class="card-title" style="margin-bottom: 30px; font-weight: 700">1 Spark</h4>
+							<p>Spark over changes and unyielding attitude. Always trying to countless failure. Striving for new approach to unsuccessful attempts.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
