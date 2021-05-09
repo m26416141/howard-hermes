@@ -2,22 +2,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 .content-1-introduction {
-	margin: 40px;
+	margin: 40px 0px 40px 100px;
 	color: #380139;
 	align-items: center;
-	justify-content: center;
-	text-align: center;
 }
 
 .intro-moto {
-	font-size: 70px;
+	font-size: 40px;
 	font-weight: 700;
 	// font-family: "Abril Fatface", sans-serif !important;
 }
 
+.intro-separator {
+	flex-grow: 1;
+	background-color: #380139;
+	height: 2px;
+}
+
 .col-introduction {
 	width: fit-content;
-	padding: 20px;
+	padding: 0px 0px 0px 20px;
 }
 
 .col-introduction-2 {
@@ -35,10 +39,26 @@
 
 .navbar {
 	background-color: white !important;
+	padding: 20px;
 }
 
 .col-intro-2-pict {
 	padding: 0px;
+	// height: 70%;
+}
+
+.border-link {
+	border-bottom: 2px solid #b17abd;
+}
+
+.col-link {
+	align-items: center;
+}
+
+.col-social-media {
+	background-color: #380139;
+	padding: 10px;
+	margin-left: 20px;
 }
 
 @media only screen and (max-width: 375px) {
@@ -70,22 +90,23 @@
 	}
 	.row-introduction-2 {
 		// position: static;
-		height: 700px;
+		height: 100%;
 		padding: 0px;
 	}
 	.col-intro-2-desc {
 		padding: 100px;
-		padding-top: 120px;
-		padding-bottom: 0px;
+		padding-top: 100px;
+		padding-bottom: 100px;
 		vertical-align: middle;
 	}
 	.card {
 		height: 100%;
 		border: 0px;
+		transition: 0.3s;
 	}
 	.card:hover {
 		background-color: white;
-		box-shadow: 0px 0px 10px 5px #aaaaaa3d;
+		box-shadow: 0px 0px 10px 5px #7070704d;
 	}
 	.card-body {
 		padding: 15px;
@@ -93,4 +114,23 @@
 	.col-sm-4 {
 		padding: 7px;
 	}
+	.end-page-info {
+		padding: 70px 80px;
+	}
 }
+
+// .separator {
+// 	display: flex;
+// 	align-items: center;
+// 	text-align: center;
+// }
+
+// .separator::after {
+// 	content: "";
+// 	flex: 1;
+// 	border-bottom: 1px solid #000;
+// }
+
+// .separator:not(:empty)::after {
+// 	margin-left: 0.25em;
+// }
