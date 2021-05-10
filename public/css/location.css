@@ -1,3 +1,119 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+.content-1-introduction {
+  margin: 40px 0px 40px 100px;
+  color: #380139;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
 
+.intro-moto {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.intro-separator {
+  flex-grow: 1;
+  background-color: #380139;
+  height: 2px;
+}
+
+.col-introduction {
+  padding: 0px 0px 0px 20px;
+}
+
+.col-introduction-2 {
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.intro-2-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: white !important;
+  padding: 20px;
+}
+
+.col-intro-2-pict {
+  padding: 0px;
+}
+
+.border-link {
+  border-bottom: 2px solid #b17abd;
+}
+
+.col-link {
+  align-items: center;
+}
+
+.col-social-media {
+  background-color: #380139;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  .intro-moto {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .intro-separator {
+    flex-grow: 0;
+  }
+
+  .content-1-introduction {
+    margin: 0px;
+    color: #380139;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-introduction {
+    padding: 20px;
+    height: 50%;
+  }
+
+  .row-get-in-touch {
+    padding: 0px;
+  }
+}
+@media only screen and (min-width: 1040px) {
+  .col-introduction {
+    margin-bottom: 400px;
+  }
+
+  .row-introduction-2 {
+    height: 100%;
+    padding: 0px;
+  }
+
+  .col-intro-2-desc {
+    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    vertical-align: middle;
+  }
+
+  .end-page-info {
+    padding: 70px 80px;
+  }
+
+  .row-get-in-touch {
+    padding: 0px 200px;
+  }
+
+  .col-location-details {
+    color: white;
+    padding: 100px 0px 200px 0px;
+  }
+}
 
 /*# sourceMappingURL=location.css.map */
