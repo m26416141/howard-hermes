@@ -4,6 +4,8 @@
   margin: 40px 0px 40px 100px;
   color: #380139;
   align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .intro-moto {
@@ -18,7 +20,6 @@
 }
 
 .col-introduction {
-  width: fit-content;
   padding: 0px 0px 0px 20px;
 }
 
@@ -64,24 +65,29 @@
     font-weight: 700;
   }
 
+  .intro-separator {
+    flex-grow: 0;
+  }
+
   .content-1-introduction {
     margin: 0px;
     color: #380139;
+    display: flex;
+    flex-direction: column;
   }
 
   .col-introduction {
-    width: auto;
     padding: 20px;
     height: 50%;
   }
+
+  .row-get-in-touch {
+    padding: 0px;
+  }
 }
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1040px) {
   .col-introduction {
     margin-bottom: 400px;
-  }
-
-  .row-introduction {
-    position: static;
   }
 
   .row-introduction-2 {
@@ -117,6 +123,10 @@
 
   .end-page-info {
     padding: 70px 80px;
+  }
+
+  .row-get-in-touch {
+    padding: 0px 200px;
   }
 }
 
