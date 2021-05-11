@@ -60,7 +60,7 @@
 }
 
 .col-social-media {
-  background-color: #380139;
+  background-image: linear-gradient(130deg, #380139 70%, #b17abd);
   padding: 10px;
   margin-left: 20px;
 }
@@ -138,6 +138,10 @@
 
   .card-body {
     padding: 15px;
+  }
+
+  .services-card-title {
+    font-size: 20px;
   }
 }
 
