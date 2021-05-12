@@ -46,6 +46,17 @@
 }
 
 .border-link {
+  padding-bottom: 7px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid #b17abd;
+  transition: 0.3s;
+}
+
+.border-link:hover {
+  padding-bottom: 4px;
+  color: white;
+  text-decoration: none;
   border-bottom: 2px solid #b17abd;
 }
 
@@ -57,6 +68,17 @@
   background-image: linear-gradient(130deg, #380139 70%, #b17abd);
   padding: 10px;
   margin-left: 20px;
+  background-size: 200%;
+  background-position: right;
+  transition: 0.4s background-position ease-in-out;
+}
+
+.col-social-media:hover {
+  background-image: linear-gradient(130deg, #380139 70%, #b17abd);
+  background-size: 200%;
+  padding: 10px;
+  margin-left: 20px;
+  background-position: left;
 }
 
 @media only screen and (max-width: 375px) {
