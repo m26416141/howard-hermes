@@ -50,6 +50,17 @@
 }
 
 .border-link {
+	padding-bottom: 7px;
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px solid #b17abd;
+	transition: 0.3s;
+}
+
+.border-link:hover {
+	padding-bottom: 4px;
+	color: white;
+	text-decoration: none;
 	border-bottom: 2px solid #b17abd;
 }
 
