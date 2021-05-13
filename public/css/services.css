@@ -43,7 +43,7 @@ body {
 
 .navbar {
   background-color: white !important;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 .col-intro-2-pict {
@@ -71,7 +71,7 @@ body {
 
 .card-media {
   background-color: #f2f2f2;
-  padding: 50px 0px;
+  padding: 40px 0px;
   margin-bottom: 20px;
 }
 
@@ -156,6 +156,7 @@ body {
     height: 100%;
     border: 0px;
     transition: 0.3s;
+    border-radius: 0px;
   }
 
   .card:hover {
@@ -169,6 +170,7 @@ body {
 
   .services-card-title {
     font-size: 20px;
+    font-family: unb_probold;
   }
 }
 
