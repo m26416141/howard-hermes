@@ -1,5 +1,8 @@
-@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("/assets/font/converted/stylesheet.css");
+
+body {
+	font-family: unb_officeregular;
+}
 
 .content-1-introduction {
 	margin: 40px 0px 40px 100px;
@@ -120,7 +123,7 @@
 		vertical-align: middle;
 	}
 	.end-page-info {
-		padding: 70px 80px;
+		padding: 50px 80px 70px 80px;
 	}
 	.row-get-in-touch {
 		padding: 0px 200px;

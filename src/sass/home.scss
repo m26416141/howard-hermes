@@ -1,5 +1,10 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("/assets/font/converted/stylesheet.css");
+
+body {
+	font-family: unb_proregular;
+}
 
 .content-1-introduction {
 	margin: 40px 0px 40px 100px;
@@ -10,6 +15,7 @@
 }
 
 .intro-moto {
+	font-family: unb_probold;
 	font-size: 40px;
 	font-weight: 700;
 	// font-family: "Abril Fatface", sans-serif !important;
@@ -19,6 +25,7 @@
 	flex-grow: 1;
 	background-color: #380139;
 	height: 2px;
+	margin-top: 50px;
 }
 
 .col-introduction {
@@ -37,6 +44,21 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.our-history-link {
+	text-decoration: none;
+	color: white;
+	padding-bottom: 7px;
+	border-bottom: 2px solid #b17abd;
+	transition: 0.3s;
+}
+
+.our-history-link:hover {
+	text-decoration: none;
+	color: white;
+	padding-bottom: 4px;
+	border-bottom: 2px solid #b17abd;
 }
 
 .navbar {
@@ -87,6 +109,16 @@
 	background-position: left;
 }
 
+.value-img {
+	background-color: #f2f2f2;
+	padding: 50px 0px;
+	margin-bottom: 20px;
+}
+
+.card-title {
+	font-family: unb_probold;
+}
+
 @media only screen and (max-width: 375px) {
 	// .row-introduction {
 	// 	width: 100%;
@@ -117,7 +149,7 @@
 
 @media only screen and (min-width: 1040px) {
 	.col-introduction {
-		margin-bottom: 400px;
+		margin-bottom: 0px;
 	}
 	.row-introduction-2 {
 		// position: static;
@@ -146,7 +178,7 @@
 		padding: 7px;
 	}
 	.end-page-info {
-		padding: 70px 80px;
+		padding: 50px 80px 70px 80px;
 	}
 	.row-get-in-touch {
 		padding: 0px 200px;
