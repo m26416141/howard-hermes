@@ -60,7 +60,7 @@ body {
 
 .navbar {
   background-color: white !important;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
 }
 
 .col-intro-2-pict {
@@ -111,6 +111,21 @@ body {
 
 .card-title {
   font-family: unb_probold;
+}
+
+.about-us-link {
+  text-decoration: none;
+  font-family: unb_probold;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+.about-us-link:hover {
+  text-decoration: none;
+  font-family: unb_probold;
+  text-decoration: none;
+  color: #793775;
 }
 
 @media only screen and (max-width: 375px) {
