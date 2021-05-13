@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<title>Location - Howard Hermes</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link rel="stylesheet" href="public/css/location.css" />
+	</head>
+	<body>
+		<!-- navigation bar -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="index.html" style="margin: 20px 40px 0px 20px">
+				<img src="assets/img/1x/logo-crop.png" height="40" class="d-inline-block align-top" alt="" />
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#"
+							>Who We Are
+							<!-- <span class="sr-only">(current)</span> --></a
+						>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Careers</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="row row-location">
+				<div class="col-sm-6 col-location-details" style="background-image: linear-gradient(130deg, #380139 50%, #b17abd)">
+					<div style="margin-left: 80px; margin-right: 80px">
+						<h2 style="margin-bottom: 70px; font-family: unb_probold; font-weight: 700; font-size: 40px">Our Office Location</h2>
+						<h6 style="text-transform: uppercase; font-family: unb_probold; font-weight: 700; margin-bottom: 20px">Head Office</h6>
+						<p style="margin-bottom: 10px; font-weight: 200">Jakarta : PT Howard Hermes Indonesia<br />Wisma GKBI Floor 39, Jl. Jend. Sudirman Jakarta - Indonesia</p>
+						<a href="#" id="LinkMapJkt" onclick="loadJakarta()" style="color: white; font-family: unb_probold; text-decoration: none">Find us on Maps &rarr;</a>
+						<br />
+						<p style="margin-top: 40px; margin-bottom: 10px; font-weight: 200">Surabaya : PT Howard Hermes Indonesia<br />Jalan Dharmahusadha Indah 55 Surabaya - Indonesia</p>
+						<a href="#" id="LinkMapSby" onclick="loadSurabaya()" style="color: white; font-family: unb_probold; text-decoration: none">Find us on Maps &rarr;</a>
+					</div>
+				</div>
+				<div class="col-sm-6" style="padding: 0px">
+					<iframe
+						id="loadPlace"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.420037426814!2d112.7706218612!3d-7.273801059222218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa2f95de1e2d%3A0x498c56bba196e7e!2sJl.%20Raya%20Dharma%20Husada%20Indah%20No.55%2C%20Mulyorejo%2C%20Kec.%20Mulyorejo%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060115!5e0!3m2!1sen!2sid!4v1620625422672!5m2!1sen!2sid"
+						style="border: 0; width: 100%; height: 100%"
+						allowfullscreen=""
+						loading="lazy"
+					></iframe>
+				</div>
+			</div>
+			<!-- (VI) social media and copyright -->
+			<div class="row end-page-info">
+				<div class="col-sm" style="display: flex; align-items: center; padding: 0px">
+					<img src="assets/img/1x/logo-crop.png" height="70" alt="Howard Hermes Logo" style="margin-top: 20px" />
+				</div>
+				<div class="col-sm">
+					<div class="row justify-content-end">
+						<div class="col-link">
+							<a href="#" style="color: black; text-align: end; margin-left: 40px">Contact</a>
+						</div>
+						<div class="col-link">
+							<a href="location.html" style="color: black; text-align: end; margin-left: 40px">Location</a>
+						</div>
+						<div class="col-link">
+							<a href="#" style="color: black; text-align: end; margin-left: 40px">FAQ</a>
+						</div>
+						<div class="col-link">
+							<a href="#" style="color: black; text-align: end; margin-left: 40px">Privacy Policy</a>
+						</div>
+					</div>
+					<div class="row justify-content-end" style="margin-top: 40px">
+						<div class="col-social-media">
+							<a href="#">
+								<img src="assets/img/facebook.png" alt="" style="height: 20px; filter: invert(100%); display: block; margin-left: auto; margin-right: auto" />
+							</a>
+						</div>
+						<div class="col-social-media">
+							<a href="#">
+								<img src="assets/img/instagram.png" alt="" style="height: 20px; filter: invert(100%); display: block; margin-left: auto; margin-right: auto" />
+							</a>
+						</div>
+						<div class="col-social-media">
+							<a href="#">
+								<img src="assets/img/linkedin.png" alt="" style="height: 20px; filter: invert(100%); display: block; margin-left: auto; margin-right: auto" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" style="padding: 0px 80px">
+				<div class="col-sm" style="padding: 0px">
+					<hr style="background-color: black" />
+					<p style="text-align: end; margin-bottom: 40px">&#169; 2021 Howard Hermes Consulting</p>
+				</div>
+			</div>
+		</div>
+		<script>
+			function loadJakarta() {
+				document.getElementById("loadPlace").src =
+					"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15865.397455414168!2d106.80505432689411!3d-6.217575596427167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f74728ff4317%3A0x6d1995fb4925165d!2sWisma%20GKBI!5e0!3m2!1sen!2sid!4v1620713022427!5m2!1sen!2sid";
+				document.getElementById("LinkMapSby").style.color = "white";
+				document.getElementById("LinkMapJkt").style.color = "#b17abd";
+			}
+			function loadSurabaya() {
+				document.getElementById("loadPlace").src =
+					"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7915.420037426814!2d112.7706218612!3d-7.273801059222218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa2f95de1e2d%3A0x498c56bba196e7e!2sJl.%20Raya%20Dharma%20Husada%20Indah%20No.55%2C%20Mulyorejo%2C%20Kec.%20Mulyorejo%2C%20Kota%20SBY%2C%20Jawa%20Timur%2060115!5e0!3m2!1sen!2sid!4v1620625422672!5m2!1sen!2sid";
+				document.getElementById("LinkMapSby").style.color = "#b17abd";
+				document.getElementById("LinkMapJkt").style.color = "white";
+			}
+		</script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

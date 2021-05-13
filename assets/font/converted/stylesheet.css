@@ -1,0 +1,69 @@
+@font-face {
+	font-family: "unb_problack";
+	src: url("unb_pro_black-webfont.woff2") format("woff2"), url("unb_pro_black-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_probold_italic";
+	src: url("unb_pro_bold_italic-webfont.woff2") format("woff2"), url("unb_pro_bold_italic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_probold";
+	src: url("unb_pro_bold-webfont.woff2") format("woff2"), url("unb_pro_bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_proregular_italic";
+	src: url("unb_pro_italic-webfont.woff2") format("woff2"), url("unb_pro_italic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_prolight";
+	src: url("unb_pro_light-webfont.woff2") format("woff2"), url("unb_pro_light-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_proregular";
+	src: url("unb_pro_regular-webfont.woff2") format("woff2"), url("unb_pro_regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_officebold_italic";
+	src: url("unb-office_bold-italic-webfont.woff2") format("woff2"), url("unb-office_bold-italic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_officebold";
+	src: url("unb-office_bold-webfont.woff2") format("woff2"), url("unb-office_bold-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_officeitalic";
+	src: url("unb-office_italic-webfont.woff2") format("woff2"), url("unb-office_italic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "unb_officeregular";
+	src: url("unb-office_regular-webfont.woff2") format("woff2"), url("unb-office_regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
