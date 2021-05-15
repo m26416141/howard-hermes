@@ -64,6 +64,7 @@ body {
 .navbar {
 	background-color: white !important;
 	padding: 0px 20px 20px 20px;
+	transition: 0.3s;
 }
 
 .col-intro-2-pict {
@@ -184,7 +185,15 @@ body {
 	.card {
 		height: 100%;
 		border: 0px;
-		transition: 0.3s;
+		transition: 0.5s;
+		.card-media {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0s, opacity 0.5s linear;
+		}
+		.card-desc {
+			transition: 0.5s;
+		}
 	}
 	// .card-desc {
 	// 	text-overflow: ellipsis;
@@ -195,7 +204,9 @@ body {
 		background-color: white;
 		box-shadow: 0px 0px 10px 5px #7070704d;
 		.card-media {
-			display: none;
+			visibility: hidden;
+			opacity: 0;
+			height: 0;
 		}
 		.card-desc {
 			white-space: normal;
