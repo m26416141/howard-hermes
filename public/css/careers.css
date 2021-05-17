@@ -59,9 +59,13 @@ body {
 }
 
 .navbar {
-  background-color: white !important;
   padding: 0px 20px 20px 20px;
   transition: 0.3s;
+}
+
+.banner-image {
+  background-image: url(/assets/img/M-21.jpg);
+  background-size: cover;
 }
 
 .col-intro-2-pict {
@@ -118,8 +122,10 @@ body {
   text-decoration: none;
   font-family: unb_probold;
   text-decoration: none;
-  color: black;
+  color: #793775;
   transition: 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
 }
 
 .about-us-link:hover {
@@ -127,6 +133,8 @@ body {
   font-family: unb_probold;
   text-decoration: none;
   color: #793775;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #793775;
 }
 
 .card {

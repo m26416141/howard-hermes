@@ -144,12 +144,14 @@ label {
 	margin-bottom: 20px;
 }
 
-input {
+.form-input {
 	border: 1px solid black;
 	border-radius: 0px;
+	box-sizing: border-box;
+	outline: none;
 }
-input:focus {
-	border: 1px solid #b17abd;
+.form-input:focus {
+	border: 1px solid #380139;
 	border-radius: 0px;
 }
 .button-submit {

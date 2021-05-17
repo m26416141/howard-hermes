@@ -6,7 +6,7 @@ body {
 }
 
 .content-1-introduction {
-  margin: 40px 0px 40px 100px;
+  margin: 40px 0px 40px 200px;
   color: #380139;
   align-items: center;
   display: flex;
@@ -23,7 +23,7 @@ body {
   flex-grow: 1;
   background-color: #380139;
   height: 2px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .col-introduction {
@@ -118,8 +118,10 @@ body {
   text-decoration: none;
   font-family: unb_probold;
   text-decoration: none;
-  color: black;
+  color: #793775;
   transition: 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
 }
 
 .about-us-link:hover {
@@ -127,6 +129,8 @@ body {
   font-family: unb_probold;
   text-decoration: none;
   color: #793775;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #793775;
 }
 
 @media only screen and (max-width: 375px) {
