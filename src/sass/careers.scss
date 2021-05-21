@@ -1,13 +1,13 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
+@import url("/assets/font/converted/stylesheet.css");
 
 body {
-	font-family: noto_sansregular;
+	font-family: sans-serif;
 }
 
 .content-1-introduction {
-	margin: 40px 0px 40px 200px;
+	margin: 40px 0px 40px 100px;
 	color: #380139;
 	align-items: center;
 	display: flex;
@@ -15,7 +15,7 @@ body {
 }
 
 .intro-moto {
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 	font-size: 40px;
 	font-weight: 700;
 	// font-family: "Abril Fatface", sans-serif !important;
@@ -25,7 +25,7 @@ body {
 	flex-grow: 1;
 	background-color: #380139;
 	height: 2px;
-	margin-top: 0px;
+	margin-top: 50px;
 }
 
 .col-introduction {
@@ -62,7 +62,7 @@ body {
 }
 
 .navbar {
-	background-color: white !important;
+	// background-color: white !important;
 	padding: 20px 20px 20px 20px;
 	transition: 0.3s;
 }
@@ -90,6 +90,11 @@ body {
 	color: #793775;
 	border-bottom: 2px solid #793775;
 	padding-bottom: 2px;
+}
+
+.banner-image {
+	background-image: url(/assets/img/M-21.jpg);
+	background-size: cover;
 }
 
 .col-intro-2-pict {
@@ -142,12 +147,12 @@ body {
 }
 
 .card-title {
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 }
 
 .about-us-link {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 	text-decoration: none;
 	color: #793775;
 	transition: 0.3s;
@@ -157,11 +162,15 @@ body {
 
 .about-us-link:hover {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 	text-decoration: none;
 	color: #793775;
 	padding-bottom: 4px;
 	border-bottom: 2px solid #793775;
+}
+
+.card {
+	border-radius: 0px;
 }
 
 @media only screen and (max-width: 375px) {
@@ -210,28 +219,35 @@ body {
 	.card {
 		height: 100%;
 		border: 0px;
-		transition: 0.3s;
-		.value-img {
-			visibility: hidden;
-			display: none;
-			transition: 0.3s;
+		transition: 0.5s;
+		.card-media {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 0s, opacity 0.5s linear;
+		}
+		.card-desc {
+			transition: 0.5s;
 		}
 	}
+	// .card-desc {
+	// 	text-overflow: ellipsis;
+	// 	overflow: hidden;
+	// 	white-space: nowrap;
+	// }
 	.card:hover {
 		background-color: white;
 		box-shadow: 0px 0px 10px 5px #7070704d;
-		.card-img-top {
+		.card-media {
 			visibility: hidden;
-			display: none;
-			transition: 0.3s;
+			opacity: 0;
+			height: 0;
 		}
-		.value-img {
-			visibility: visible;
-			display: block;
+		.card-desc {
+			white-space: normal;
 		}
 	}
 	.card-body {
-		padding: 15px;
+		padding: 20px;
 	}
 	.col-sm-4 {
 		padding: 7px;
@@ -242,20 +258,17 @@ body {
 	.row-get-in-touch {
 		padding: 0px 200px;
 	}
+	.wrapper {
+		padding: 20px 20px 20px 20px;
+		background: #eaeaea;
+		max-width: 400px;
+		margin: 20px auto;
+	}
+	// .wrapper-p {
+	// 	font-weight: 300;
+	// 	overflow: hidden;
+	// 	display: -webkit-box;
+	// 	-webkit-line-clamp: 3;
+	// 	-webkit-box-orient: vertical;
+	// }
 }
-
-// .separator {
-// 	display: flex;
-// 	align-items: center;
-// 	text-align: center;
-// }
-
-// .separator::after {
-// 	content: "";
-// 	flex: 1;
-// 	border-bottom: 1px solid #000;
-// }
-
-// .separator:not(:empty)::after {
-// 	margin-left: 0.25em;
-// }

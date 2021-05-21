@@ -3,11 +3,11 @@
 @import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
 
 body {
-	font-family: noto_sansregular;
+	font-family: sans-serif;
 }
 
 .content-1-introduction {
-	margin: 40px 0px 40px 200px;
+	margin: 40px 0px 40px 100px;
 	color: #380139;
 	align-items: center;
 	display: flex;
@@ -15,7 +15,7 @@ body {
 }
 
 .intro-moto {
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 	font-size: 40px;
 	font-weight: 700;
 	// font-family: "Abril Fatface", sans-serif !important;
@@ -25,7 +25,7 @@ body {
 	flex-grow: 1;
 	background-color: #380139;
 	height: 2px;
-	margin-top: 0px;
+	margin-top: 50px;
 }
 
 .col-introduction {
@@ -142,26 +142,79 @@ body {
 }
 
 .card-title {
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 }
 
 .about-us-link {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 	text-decoration: none;
-	color: #793775;
+	color: black;
 	transition: 0.3s;
-	padding-bottom: 2px;
-	border-bottom: 2px solid transparent;
 }
 
 .about-us-link:hover {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: unb_probold;
 	text-decoration: none;
 	color: #793775;
-	padding-bottom: 4px;
-	border-bottom: 2px solid #793775;
+}
+
+.card {
+	border-radius: 0px;
+}
+
+label {
+	font-family: unb_probold;
+	margin-bottom: 20px;
+}
+
+.form-input {
+	border: 1px solid black;
+	border-radius: 0px;
+	box-sizing: border-box;
+	outline: none;
+	margin-bottom: 10px;
+}
+
+.form-input:focus {
+	border: 1px solid #793775;
+	border-radius: 0px;
+}
+
+.form-text-area {
+	border: 1px solid black;
+	border-radius: 0px;
+	box-sizing: border-box;
+	outline: none;
+	margin-bottom: 10px;
+}
+
+.form-text-area:focus {
+	border: 1px solid #793775;
+	border-radius: 0px;
+}
+
+.button-submit {
+	margin-top: 30px;
+	background-image: linear-gradient(145deg, #380139 90%, #b17abd);
+	background-size: 200%;
+	background-position: right;
+	transition: 0.3s background-position ease-in-out;
+	font-family: sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 13px 40px;
+	border: none;
+	box-shadow: none;
+	color: white;
+	border-radius: 0px;
+}
+
+.button-submit:hover {
+	background-image: linear-gradient(145deg, #380139 90%, #b17abd);
+	background-size: 200%;
+	background-position: left;
 }
 
 @media only screen and (max-width: 375px) {
@@ -211,51 +264,67 @@ body {
 		height: 100%;
 		border: 0px;
 		transition: 0.3s;
-		.value-img {
-			visibility: hidden;
-			display: none;
-			transition: 0.3s;
-		}
 	}
+	// .card-desc {
+	// 	text-overflow: ellipsis;
+	// 	overflow: hidden;
+	// 	white-space: nowrap;
+	// }
 	.card:hover {
 		background-color: white;
 		box-shadow: 0px 0px 10px 5px #7070704d;
-		.card-img-top {
-			visibility: hidden;
+		.card-media {
 			display: none;
-			transition: 0.3s;
 		}
-		.value-img {
-			visibility: visible;
-			display: block;
+		.card-desc {
+			white-space: normal;
 		}
 	}
 	.card-body {
-		padding: 15px;
+		padding: 20px;
 	}
 	.col-sm-4 {
 		padding: 7px;
 	}
 	.end-page-info {
-		padding: 50px 80px 70px 80px;
+		padding: 70px 80px 0px 80px;
+		box-shadow: 0 -10px 40px 0 rgba(0, 0, 0, 0.07);
 	}
 	.row-get-in-touch {
 		padding: 0px 200px;
 	}
+	.wrapper {
+		padding: 20px 20px 20px 20px;
+		background: #eaeaea;
+		max-width: 400px;
+		margin: 20px auto;
+	}
+	.contact-info {
+		background-color: url("/assets/img/M-22.jpg");
+		background-color: white;
+	}
+	.form-input {
+		padding: 20px 20px 20px;
+		font-family: sans-serif;
+	}
+	.form-section {
+		margin-left: 40px;
+		margin-top: 40px;
+		float: left;
+	}
+	input {
+		width: 100%;
+	}
+	textarea {
+		width: 100%;
+		font-family: sans-serif;
+		padding: 20px;
+	}
+	// .wrapper-p {
+	// 	font-weight: 300;
+	// 	overflow: hidden;
+	// 	display: -webkit-box;
+	// 	-webkit-line-clamp: 3;
+	// 	-webkit-box-orient: vertical;
+	// }
 }
-
-// .separator {
-// 	display: flex;
-// 	align-items: center;
-// 	text-align: center;
-// }
-
-// .separator::after {
-// 	content: "";
-// 	flex: 1;
-// 	border-bottom: 1px solid #000;
-// }
-
-// .separator:not(:empty)::after {
-// 	margin-left: 0.25em;
-// }
