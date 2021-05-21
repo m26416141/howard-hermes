@@ -1,6 +1,6 @@
 ---
 deployment:
     tasks:
-        - export DEPLOYPATH=/home/hhconsul/repositories/howard-hermes
+        - export DEPLOYPATH=/home/hhconsul/public_html/howard-hermes
 
         - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
