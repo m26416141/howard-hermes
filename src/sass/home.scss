@@ -48,15 +48,19 @@ body {
 
 .our-history-link {
 	text-decoration: none;
-	color: white;
-	padding-bottom: 7px;
-	border-bottom: 2px solid #b17abd;
+	font-family: noto_sansbold;
+	text-decoration: none;
+	color: #b17abd;
 	transition: 0.3s;
+	padding-bottom: 2px;
+	border-bottom: 2px solid transparent;
 }
 
 .our-history-link:hover {
 	text-decoration: none;
-	color: white;
+	font-family: noto_sansbold;
+	text-decoration: none;
+	color: #b17abd;
 	padding-bottom: 4px;
 	border-bottom: 2px solid #b17abd;
 }
@@ -138,7 +142,7 @@ body {
 .value-img {
 	background-color: #f2f2f2;
 	padding: 50px 0px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .card-title {
