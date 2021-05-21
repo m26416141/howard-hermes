@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("/assets/font/converted/stylesheet.css");
 body {
-  font-family: unb_proregular;
+  font-family: sans-serif;
 }
 
 .content-1-introduction {
@@ -59,8 +59,32 @@ body {
 }
 
 .navbar {
-  padding: 0px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   transition: 0.3s;
+}
+
+.nav-link {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding: 0px;
+  margin: 0px 10px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding: 0px;
+  margin: 0px 10px;
+  border-bottom: 2px solid #793775;
+  padding-bottom: 2px;
+}
+
+.active {
+  color: #793775;
+  border-bottom: 2px solid #793775;
+  padding-bottom: 2px;
 }
 
 .banner-image {

@@ -1,9 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("/assets/font/converted/stylesheet.css");
+@import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
 
 body {
-	font-family: unb_proregular;
+	font-family: sans-serif;
 }
 
 .content-1-introduction {
@@ -63,8 +63,33 @@ body {
 
 .navbar {
 	background-color: white !important;
-	padding: 0px 20px 20px 20px;
+	padding: 20px 20px 20px 20px;
 	transition: 0.3s;
+}
+
+.nav-link {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	padding: 0px;
+	margin: 0px 10px;
+	border-bottom: 2px solid transparent;
+	transition: 0.3s;
+}
+
+.nav-link:hover {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	padding: 0px;
+	margin: 0px 10px;
+	border-bottom: 2px solid #793775;
+	padding-bottom: 2px;
+}
+
+.active {
+	// font-family: unb_probold;
+	color: #793775;
+	border-bottom: 2px solid #793775;
+	padding-bottom: 2px;
 }
 
 .col-intro-2-pict {
@@ -149,13 +174,29 @@ label {
 	border-radius: 0px;
 	box-sizing: border-box;
 	outline: none;
+	margin-bottom: 10px;
 }
+
 .form-input:focus {
-	border: 1px solid #380139;
+	border: 1px solid #793775;
 	border-radius: 0px;
 }
+
+.form-text-area {
+	border: 1px solid black;
+	border-radius: 0px;
+	box-sizing: border-box;
+	outline: none;
+	margin-bottom: 10px;
+}
+
+.form-text-area:focus {
+	border: 1px solid #793775;
+	border-radius: 0px;
+}
+
 .button-submit {
-	margin-top: 40px;
+	margin-top: 30px;
 	background-image: linear-gradient(145deg, #380139 90%, #b17abd);
 	background-size: 200%;
 	background-position: right;
@@ -169,6 +210,7 @@ label {
 	color: white;
 	border-radius: 0px;
 }
+
 .button-submit:hover {
 	background-image: linear-gradient(145deg, #380139 90%, #b17abd);
 	background-size: 200%;
@@ -245,7 +287,7 @@ label {
 		padding: 7px;
 	}
 	.end-page-info {
-		padding: 50px 80px 0px 80px;
+		padding: 70px 80px 0px 80px;
 		box-shadow: 0 -10px 40px 0 rgba(0, 0, 0, 0.07);
 	}
 	.row-get-in-touch {

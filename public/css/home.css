@@ -1,8 +1,8 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("/assets/font/converted/stylesheet.css");
+@import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
 body {
-  font-family: unb_proregular;
+  font-family: noto_sansregular;
 }
 
 .content-1-introduction {
@@ -14,7 +14,7 @@ body {
 }
 
 .intro-moto {
-  font-family: unb_probold;
+  font-family: noto_sansbold;
   font-size: 40px;
   font-weight: 700;
 }
@@ -23,7 +23,7 @@ body {
   flex-grow: 1;
   background-color: #380139;
   height: 2px;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .col-introduction {
@@ -60,8 +60,32 @@ body {
 
 .navbar {
   background-color: white !important;
-  padding: 0px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   transition: 0.3s;
+}
+
+.nav-link {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding: 0px;
+  margin: 0px 10px;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding: 0px;
+  margin: 0px 10px;
+  border-bottom: 2px solid #793775;
+  padding-bottom: 2px;
+}
+
+.active {
+  color: #793775;
+  border-bottom: 2px solid #793775;
+  padding-bottom: 2px;
 }
 
 .col-intro-2-pict {
@@ -111,12 +135,12 @@ body {
 }
 
 .card-title {
-  font-family: unb_probold;
+  font-family: noto_sansbold;
 }
 
 .about-us-link {
   text-decoration: none;
-  font-family: unb_probold;
+  font-family: noto_sansbold;
   text-decoration: none;
   color: #793775;
   transition: 0.3s;
@@ -126,7 +150,7 @@ body {
 
 .about-us-link:hover {
   text-decoration: none;
-  font-family: unb_probold;
+  font-family: noto_sansbold;
   text-decoration: none;
   color: #793775;
   padding-bottom: 4px;
@@ -181,10 +205,24 @@ body {
     border: 0px;
     transition: 0.3s;
   }
+  .card .value-img {
+    visibility: hidden;
+    display: none;
+    transition: 0.3s;
+  }
 
   .card:hover {
     background-color: white;
     box-shadow: 0px 0px 10px 5px #7070704d;
+  }
+  .card:hover .card-img-top {
+    visibility: hidden;
+    display: none;
+    transition: 0.3s;
+  }
+  .card:hover .value-img {
+    visibility: visible;
+    display: block;
   }
 
   .card-body {
