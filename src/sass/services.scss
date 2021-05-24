@@ -124,6 +124,20 @@ body {
 	background-position: left;
 }
 
+.col-link {
+	align-items: center;
+	a {
+		text-decoration: none;
+		transition: 0.3s;
+		padding-bottom: 2px;
+		border-bottom: 2px solid transparent;
+	}
+	a:hover {
+		padding-bottom: 4px;
+		border-bottom: 2px solid #793775;
+	}
+}
+
 @media only screen and (max-width: 375px) {
 	// .row-introduction {
 	// 	width: 100%;
@@ -168,7 +182,7 @@ body {
 		vertical-align: middle;
 	}
 	.end-page-info {
-		padding: 70px 80px;
+		padding: 50px 80px 70px;
 	}
 	.row-get-in-touch {
 		padding: 0px 200px;
@@ -195,6 +209,6 @@ body {
 	}
 	.services-card-title {
 		font-size: 20px;
-		font-family: unb_probold;
+		font-family: noto_sansbold;
 	}
 }

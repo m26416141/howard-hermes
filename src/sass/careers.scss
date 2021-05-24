@@ -1,9 +1,9 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("/assets/font/converted/stylesheet.css");
+@import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
 
 body {
-	font-family: sans-serif;
+	font-family: noto_sansregular, sans-serif;
 }
 
 .content-1-introduction {
@@ -15,7 +15,7 @@ body {
 }
 
 .intro-moto {
-	font-family: unb_probold;
+	font-family: noto_sansbold;
 	font-size: 40px;
 	font-weight: 700;
 	// font-family: "Abril Fatface", sans-serif !important;
@@ -147,12 +147,13 @@ body {
 }
 
 .card-title {
-	font-family: unb_probold;
+	font-family: noto_sansbold;
+	margin-top: 20px;
 }
 
 .about-us-link {
 	text-decoration: none;
-	font-family: unb_probold;
+	font-family: noto_sansbold;
 	text-decoration: none;
 	color: #793775;
 	transition: 0.3s;
@@ -162,7 +163,7 @@ body {
 
 .about-us-link:hover {
 	text-decoration: none;
-	font-family: unb_probold;
+	font-family: noto_sansbold;
 	text-decoration: none;
 	color: #793775;
 	padding-bottom: 4px;
@@ -171,6 +172,20 @@ body {
 
 .card {
 	border-radius: 0px;
+}
+
+.col-link {
+	align-items: center;
+	a {
+		text-decoration: none;
+		transition: 0.3s;
+		padding-bottom: 2px;
+		border-bottom: 2px solid transparent;
+	}
+	a:hover {
+		padding-bottom: 4px;
+		border-bottom: 2px solid #793775;
+	}
 }
 
 @media only screen and (max-width: 375px) {
@@ -244,6 +259,9 @@ body {
 		}
 		.card-desc {
 			white-space: normal;
+		}
+		.card-title {
+			margin-top: 20px;
 		}
 	}
 	.card-body {

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: noto_sansregular, sans-serif;
 }
 
 .content-1-introduction {
@@ -113,6 +113,16 @@ body {
 .col-link {
   align-items: center;
 }
+.col-link a {
+  text-decoration: none;
+  transition: 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+.col-link a:hover {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #793775;
+}
 
 .col-social-media {
   background-image: linear-gradient(130deg, #380139 70%, #b17abd);
@@ -154,6 +164,21 @@ body {
 .about-us-link:hover {
   text-decoration: none;
   font-family: noto_sansbold;
+  text-decoration: none;
+  color: #793775;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #793775;
+}
+
+.purpose-link {
+  text-decoration: none;
+  color: #793775;
+  transition: 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.purpose-link:hover {
   text-decoration: none;
   color: #793775;
   padding-bottom: 4px;

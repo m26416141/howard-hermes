@@ -3,7 +3,7 @@
 @import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
 
 body {
-	font-family: sans-serif;
+	font-family: noto_sansregular, sans-serif;
 }
 
 .content-1-introduction {
@@ -15,7 +15,7 @@ body {
 }
 
 .intro-moto {
-	font-family: unb_probold;
+	font-family: noto_sansbold;
 	font-size: 40px;
 	font-weight: 700;
 	// font-family: "Abril Fatface", sans-serif !important;
@@ -142,12 +142,12 @@ body {
 }
 
 .card-title {
-	font-family: unb_probold;
+	font-family: noto_sansbold;
 }
 
 .about-us-link {
 	text-decoration: none;
-	font-family: unb_probold;
+	font-family: noto_sansbold;
 	text-decoration: none;
 	color: black;
 	transition: 0.3s;
@@ -155,7 +155,7 @@ body {
 
 .about-us-link:hover {
 	text-decoration: none;
-	font-family: unb_probold;
+	font-family: noto_sansbold;
 	text-decoration: none;
 	color: #793775;
 }
@@ -165,8 +165,9 @@ body {
 }
 
 label {
-	font-family: unb_probold;
-	margin-bottom: 20px;
+	font-family: noto_sansbold;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
 
 .form-input {
@@ -215,6 +216,21 @@ label {
 	background-image: linear-gradient(145deg, #380139 90%, #b17abd);
 	background-size: 200%;
 	background-position: left;
+	// box-shadow: 0px 0px 10px 5px #7070704d;
+}
+
+.col-link {
+	align-items: center;
+	a {
+		text-decoration: none;
+		transition: 0.3s;
+		padding-bottom: 2px;
+		border-bottom: 2px solid transparent;
+	}
+	a:hover {
+		padding-bottom: 4px;
+		border-bottom: 2px solid #793775;
+	}
 }
 
 @media only screen and (max-width: 375px) {
@@ -287,7 +303,7 @@ label {
 		padding: 7px;
 	}
 	.end-page-info {
-		padding: 70px 80px 0px 80px;
+		padding: 50px 80px 0px 80px;
 		box-shadow: 0 -10px 40px 0 rgba(0, 0, 0, 0.07);
 	}
 	.row-get-in-touch {
