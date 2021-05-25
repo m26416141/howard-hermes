@@ -62,14 +62,14 @@
 							Thank you for your interest in Howard Hermes Consulting. <br />
 							Please fill out the form below to ask a question or to report a technical problem.
 						</p>
-						<form action="">
+						<form method="POST" action="/php/contact.php">
 							<div>
 								<label for="inputName">NAME</label> <br />
-								<input type="text" class="form-input" id="inputName" placeholder="Your name" />
+								<input type="text" name="contact_name" class="form-input" id="inputName" placeholder="Your name" />
 							</div>
 							<div>
 								<label for="inputEmail">EMAIL</label> <br />
-								<input type="email" class="form-input" id="inputEmail" placeholder="Your email" />
+								<input type="email" name="contact_email" class="form-input" id="inputEmail" placeholder="Your email" />
 							</div>
 							<div>
 								<label for="inputSubject">SUBJECT</label> <br />
