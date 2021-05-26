@@ -1,8 +1,8 @@
-@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
 body {
-  font-family: noto_sansregular, sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .content-1-introduction {
@@ -209,7 +209,8 @@ body {
 
   .services-card-title {
     font-size: 20px;
-    font-family: noto_sansbold;
+    font-family: "Noto Sans";
+    font-weight: 700;
   }
 }
 

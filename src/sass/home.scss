@@ -1,18 +1,26 @@
 // @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
-// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+// @import url("/assets/font/webfontkit-20210520-023716/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
 
 // @font-face {
 // 	font-family: "noto_sansregular";
 // 	src: url("/assets/font/webfontkit-20210520-023716/notosans-regular-webfont.woff2") format("woff2");
-// 	// src: url("/assets/font/webfontkit-20210520-023716/notosans-regular-webfont.woff") format("woff");
+// 	src: url("/assets/font/webfontkit-20210520-023716/notosans-regular-webfont.woff") format("woff");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "noto_sansbold";
+// 	src: url("notosans-bold-webfont.woff2") format("woff2"), url("notosans-bold-webfont.woff") format("woff");
 // 	font-weight: normal;
 // 	font-style: normal;
 // }
 
 body {
-	font-family: noto_sansregular, sans-serif;
+	font-family: "Noto Sans", sans-serif;
 }
 
 .content-1-introduction {
@@ -24,7 +32,7 @@ body {
 }
 
 .intro-moto {
-	font-family: noto_sansbold;
+	font-family: "Noto Sans";
 	font-size: 40px;
 	font-weight: 700;
 	// font-family: "Abril Fatface", sans-serif !important;
@@ -57,7 +65,8 @@ body {
 
 .our-history-link {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: "Noto Sans";
+	font-weight: 700;
 	text-decoration: none;
 	color: #b17abd;
 	transition: 0.3s;
@@ -67,7 +76,8 @@ body {
 
 .our-history-link:hover {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: "Noto Sans";
+	font-weight: 700;
 	text-decoration: none;
 	color: #b17abd;
 	padding-bottom: 4px;
@@ -165,12 +175,14 @@ body {
 }
 
 .card-title {
-	font-family: noto_sansbold;
+	font-family: "Noto Sans";
+	font-weight: 700;
 }
 
 .about-us-link {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: "Noto Sans";
+	font-weight: 700;
 	text-decoration: none;
 	color: #793775;
 	transition: 0.3s;
@@ -180,7 +192,8 @@ body {
 
 .about-us-link:hover {
 	text-decoration: none;
-	font-family: noto_sansbold;
+	font-family: "Noto Sans";
+	font-weight: 700;
 	text-decoration: none;
 	color: #793775;
 	padding-bottom: 4px;

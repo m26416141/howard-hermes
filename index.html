@@ -120,7 +120,7 @@
 					<h4 style="font-weight: 700">CORPORATE VALUE</h4>
 				</div>
 				<div class="col-sm-9"><hr style="background-color: black" /></div> -->
-				<div class="intro-moto" style="flex-grow: 0; font-size: 30px; margin-right: 40px;">CORPORATE VALUE</div>
+				<div class="intro-moto" style="flex-grow: 0; font-size: 30px; margin-right: 40px;">Corporate Value</div>
                 <div class="intro-separator"></div>
 			</div>
 			<div class="row row-corporate-value" style="padding: 0px 150px 70px 150px">
@@ -178,7 +178,7 @@
 <!-- (IV) intro part 4 -->
 			<div class="row row-about-us">
 				<div class="col-sm-6 col-intro-2-desc" style="background-color: #f2f2f2; padding-bottom: 120px">
-					<p style="color: black; font-family: noto_sansbold; font-weight: 700; font-size: 50px; padding-bottom: 40px">What we believe</p>
+					<p style="color: black; font-family: 'Noto Sans'; font-weight: 700; font-size: 50px; padding-bottom: 40px">What we believe</p>
 					<p style="color: black; font-weight: 300; margin-bottom: 40px">
 						We believe that each organization is an ecosystem made up of human beings with different and unique mindsets. Each of will bring different impacts and changes to the
 						organization from time to time.
@@ -194,7 +194,7 @@
 					<img class="intro-2-img" src="assets/img/M-30.jpg" alt="" />
 				</div>
 				<div class="col-sm-6 col-intro-2-desc" style="background-color: #f2f2f2; padding-bottom: 120px">
-					<p style="color: black; font-family: noto_sansbold; font-weight: 700; font-size: 50px; padding-bottom: 40px">Our working approach</p>
+					<p style="color: black; font-family: 'Noto Sans'; font-weight: 700; font-size: 50px; padding-bottom: 40px">Our working approach</p>
 					<p style="color: black; font-weight: 100; margin-bottom: 40px">
 						We work strategically and agile to unlock the highest optimal point in both personal and professional life of each people in the organization. With the ultimate goal to have
 						the organization running automatically hand in hand towards a sustainable change as a competitiveness of the organization.
@@ -212,7 +212,7 @@
 			</div>
 			<div class="row row-about-us">
 				<div class="col-sm-6 col-intro-2-desc" style="background-color: #f2f2f2; padding-bottom: 120px">
-					<p style="color: black; font-family: noto_sansbold; font-weight: 700; font-size: 50px; padding-bottom: 40px">Our goals</p>
+					<p style="color: black; font-family: 'Noto Sans'; font-weight: 700; font-size: 50px; padding-bottom: 40px">Our goals</p>
 					<p style="color: black; font-weight: 100; margin-bottom: 40px">
 						To improve Organizational Performance<br/>
 						To achive Organizational Effectiveness and Sustainability <br>
@@ -238,7 +238,7 @@
 					<img class="intro-2-img" src="assets/img/M-27.jpg" alt=""/>
 				</div>
 				<div class="col-sm-6 col-intro-2-desc" style="background-color: #f2f2f2; padding-bottom: 120px">
-					<p style="color: black; font-family: noto_sansbold; font-weight: 700; font-size: 50px; padding-bottom: 40px">Join Howard Hermes</p>
+					<p style="color: black; font-family: 'Noto Sans'; font-weight: 700; font-size: 50px; padding-bottom: 40px">Join Howard Hermes</p>
 					<p style="color: black; font-weight: 300; margin-bottom: 40px">
 						Come to Howard Hermes to do the best work, <br>
 						with the best teams and truly be at your best.
@@ -253,7 +253,7 @@
 <!-- (V) intro part 5 -->
             <div class="row row-how"">
                 <div class="col-sm" style="background-image: linear-gradient(130deg, #380139 70%, #b17abd); text-align: center; padding: 70px 40px 70px 40px;">
-                    <p style="color: white; font-family: noto_sansbold; font-size: 40px; font-weight: 700; margin-bottom: 20px;">How can we help you?</p>
+                    <p style="color: white; font-family: 'Noto Sans'; font-size: 40px; font-weight: 700; margin-bottom: 20px;">How can we help you?</p>
                     <div class="row justify-content-sm-center row-get-in-touch">
                         <div class="col-sm" style="color: white; font-size: 20px;">
                             <p style="color: white; font-weight: 200"> <a class="border-link" href="#">Get in touch</a> with us or <a class="border-link" href="#">find our office</a></p>
@@ -323,7 +323,24 @@
             </div>
 <!-- (i) end of home page content -->
 		</div>
-        <script src="/js/navbar-scroll.js"></script>
+        <!-- <script src="/js/navbar-scroll.js"></script> -->
+		<script>
+			var scroll1 = window.pageYOffset;
+			var nav = document.querySelector('nav');
+			window.onscroll = function(){
+				var scroll2 = window.pageYOffset;
+				if (scroll1 > scroll2) {
+					document.querySelector('nav').style.top = "0";
+					nav.classList.remove('bg-light');
+					nav.style.backgroundColor = "white";
+				} else {
+					document.querySelector('nav').style.top = "-100px";
+					nav.classList.add('bg-light');
+					nav.style.backgroundColor = "white";
+				}
+				scroll1 = scroll2
+			}
+		</script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
