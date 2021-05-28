@@ -60,7 +60,7 @@
 					<div class="banner-image" style="background-size: cover;">
                         <img src="assets/img/M-21.jpg" alt="" style="width: 100%; position: relative; background-size: cover;" />
                         <div style="position: absolute; top: 150px; left: 150px">
-                            <p style="font-family: noto_sansbold; font-size: 44px; max-width: 70%; color: #380139">
+                            <p style="font-family: 'Noto Sans'; font-weight: 700; font-size: 44px; max-width: 70%; color: #380139">
                                 Welcome to your<br />
                                 Howard Hermes Careers
                             </p>
@@ -73,7 +73,7 @@
             </div>
             <div class="row">
                 <div class="col-sm" style="margin: 0px 80px; padding: 0px;">
-                    <p style="font-family: noto_sansbold; font-size: 25px;">SEARCH JOBS</p>
+                    <p style="font-family: 'Noto Sans'; font-weight: 700; font-size: 25px;">SEARCH JOBS</p>
                 </div>
             </div>
             <div class="row" style="padding: 0xp; margin: 20px 40px 70px;">
@@ -158,7 +158,7 @@
             </div>
             <div class="row row-how"">
                 <div class="col-sm" style="background-image: linear-gradient(130deg, #380139 70%, #b17abd); text-align: center; padding: 70px 40px 70px 40px;">
-                    <p style="color: white; font-family: noto_sansbold; font-size: 40px; font-weight: 600; margin-bottom: 20px;">Let us be your partner?</p>
+                    <p style="color: white; font-family: 'Noto Sans'; font-size: 40px; font-weight: 600; margin-bottom: 20px;">Let us be your partner?</p>
                     <div class="row justify-content-sm-center row-get-in-touch">
                         <div class="col-sm" style="color: white; font-size: 20px;">
                             <p style="color: white; font-weight: 200"> <a class="border-link" href="#">Get in touch</a> with us or <a class="border-link" href="#">find our office</a></p>
@@ -227,7 +227,24 @@
                 </div>
             </div>
 		</div>
-        <script type="text/javascript" src="/js/navbar-scroll.js"></script>
+        <!-- <script type="text/javascript" src="/js/navbar-scroll.js"></script> -->
+        <script>
+			var scroll1 = window.pageYOffset;
+			var nav = document.querySelector('nav');
+			window.onscroll = function(){
+				var scroll2 = window.pageYOffset;
+				if (scroll1 > scroll2) {
+					document.querySelector('nav').style.top = "0";
+					nav.classList.remove('bg-light');
+					nav.style.backgroundColor = "white";
+				} else {
+					document.querySelector('nav').style.top = "-100px";
+					nav.classList.add('bg-light');
+					nav.style.backgroundColor = "white";
+				}
+				scroll1 = scroll2
+			}
+		</script>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
