@@ -1,7 +1,9 @@
-@import url("/assets/font/converted/stylesheet.css");
+// @import url("/assets/font/converted/stylesheet.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
 
 body {
-	font-family: sans-serif;
+	font-family: "Noto Sans", sans-serif;
 }
 
 .content-1-introduction {
@@ -68,8 +70,7 @@ body {
 
 .active {
 	// font-family: unb_probold;
-	color: #793775;
-	border-bottom: 2px solid #793775;
+	color: #7f7f7f !important;
 	padding-bottom: 2px;
 }
 

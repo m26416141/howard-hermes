@@ -45,12 +45,12 @@
 		<div class="row">
 			<div class="col-sm">
 				<div class="form-section">
-					<h2 style="font-family: noto_sansbold; margin-bottom: 40px">Contact Us</h2>
+					<h2 style="font-family: 'Noto Sans'; font-weight: 700; margin-bottom: 40px">Contact Us</h2>
 					<p style="margin-bottom: 40px">
 						Thank you for your interest in Howard Hermes Consulting. <br />
 						Please fill out the form below to ask a question or to report a technical problem.
 					</p>
-					<form method="POST">
+					<!-- <form method="POST">
 						<div>
 							<label for="inputName">NAME</label> <br />
 							<input type="text" name="contact_name" class="form-input" id="inputName" placeholder="Your name" />
@@ -65,17 +65,28 @@
 						</div>
 						<div>
 							<label for="inputMessages">MESSAGES</label> <br />
-							<!-- <input type="text" class="form-input" id="inputName" placeholder="Your name" /> -->
 							<textarea class="form-text-area" id="inputMessages" rows="10" placeholder="Your messages"></textarea>
 						</div>
-						<!-- <button class="btn-block button-submit">Submit</button> -->
+						<!-- <button class="btn-block button-submit">Submit</button>
 						<input type="submit" name="submit" class="button-submit">
+					</form> -->
+					<form method="POST">
+						<label for="inputName">Name</label>
+						<input class="form-input" type="text" name="name" id="inputName" placeholder="Your name">
+						<label for="inputEmail">Email</label>
+						<input class="form-input" type="text" name="email" id="inputEmail" placeholder="Your email">
+						<label for="inputSubject">Subject</label>
+						<input class="form-input" type="text" name="subject" id="inputSubject" placeholder="Your subject">
+						<label for="inputMessages">Messages</label>
+						<textarea class="form-text-area" rows="10" maxlength="200" type="text" name="messages" id="inputMessages" placeholder="Your messages"></textarea>
+						<!-- <input type="submit" name="submit"> -->
+						<button type="submit" name="submit" class="btn-block button-submit">Submit</button>
 					</form>
 				</div>
 			</div>
 			<div class="col-sm">
 				<div style="padding-bottom: 70px">
-					<img src="/assets/img/M-22.jpg" alt="" style="max-width: 100%" />
+					<img src="assets/img/M-22.jpg" alt="" style="max-width: 100%" />
 				</div>
 			</div>
 		</div>
@@ -146,32 +157,28 @@
 </body>
 
 </html>
+
 <?php
-$serverName = "localhost";
-$userName = "root";
-$password = "";
-$dbName = "test";
-
 //create connection
-$con = mysqli_connect($serverName, $userName, $password, $dbName);
+$con = mysqli_connect("localhost", "root", "", "test");
 
-if (mysqli_connect_errno()) {
-	echo "failed to connect!";
-	exit();
-} else {
-	echo "connection success";
-}
+// if (mysqli_connect_errno()) {
+// 	echo "failed to connect!";
+// 	exit();
+// } else {
+// 	echo "connection success";
+// }
 
 if (isset($_POST["submit"])) {
-	$contactName = $_POST["contact_name"];
-	$contactEmail = $_POST["contact_email"];
+	$contactName = $_POST["name"];
+	$contactEmail = $_POST["email"];
+	$contactSubject = $_POST["subject"];
 
-	$sql = "INSERT into 'contact' (name,email) VALUES ('$contactName', '$contactEmail')";
+	$sql = "INSERT into contact (name, email, subject) VALUES ('$contactName', '$contactEmail', '$contactSubject')";
 
-	if (mysqli_query($con, $sql)) {
-		echo "record added";
-	} else {
-		echo "error adding";
+	try {
+		mysqli_query($con, $sql);
+	} catch (Exception $e) {
+		echo $e->getMessage();
 	}
 }
-?>
