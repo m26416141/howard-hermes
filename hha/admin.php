@@ -44,7 +44,7 @@
                 </ul>
                 <div class="row">
                     <div class="col-sm-12 hh-copyright">
-                        <p style="font-size: 10px; align-items: center;"><b>&#169; 2021</b> Howard Hermes Consulting</p>
+                        <p style="font-size: 10px; text-align: center;"><b>&#169; 2021</b> Howard Hermes Consulting</p>
                     </div>
                 </div>
             </div>

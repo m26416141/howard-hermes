@@ -106,7 +106,7 @@ body {
   transform: translate(0%, -13%);
   background: white;
   padding: 40px;
-  max-width: 200px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 0px 10px 5px #7070704d;
@@ -132,6 +132,37 @@ body {
 .row-form-add .form-input:focus {
   border: 1px solid #793775;
   border-radius: 0px;
+}
+.row-form-add .form-place {
+  border: 1px solid black;
+  border-radius: 0px;
+  box-sizing: border-box;
+  outline: none;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+.row-form-add .form-place:focus {
+  border: 1px solid #793775;
+  border-radius: 0px;
+}
+.row-form-add .form-text-area {
+  border: 1px solid black;
+  border-radius: 0px;
+  box-sizing: border-box;
+  outline: none !important;
+  margin-bottom: 10px;
+}
+.row-form-add .form-text-area:focus {
+  border: 1px solid #793775 !important;
+  border-radius: 0px;
+}
+.row-form-add .form-control {
+  color: black !important;
+  padding: 10px;
+}
+.row-form-add .form-control:focus {
+  box-shadow: none;
 }
 .row-form-add .button-submit {
   margin-top: 30px;
