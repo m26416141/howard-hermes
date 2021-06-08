@@ -27,8 +27,8 @@
                 </div>
                 <div class="logo-border" style="margin-top: 20px;"></div>
                 <ul class="list-group">
-                    <li class="list-group-item" id="messages">
-                        <a id="text-messages" href="#" data-target="admin-messages" onclick="loadMessages()">
+                    <li class="list-group-item" id="messages" style="background-image: linear-gradient(145deg, #380139 90%, #b17abd);">
+                        <a id="text-messages" href="#" data-target="admin-messages" onclick="loadMessages()" style="color: white;">
                             <!-- <box-icon name='chat' type='solid'></box-icon> -->
                             <i class='bx bxs-message-error'></i>
                             <span class="links-name">Messages</span>
@@ -42,8 +42,14 @@
                         </a>
                     </li>
                 </ul>
+                <div class="row">
+                    <div class="col-sm-12 hh-copyright">
+                        <p style="font-size: 10px; align-items: center;"><b>&#169; 2021</b> Howard Hermes Consulting</p>
+                    </div>
+                </div>
             </div>
             <div class="col-sm content" id="content">
+                <?php include('admin-messages.php'); ?>
             </div>
         </div>
     </div>
@@ -52,16 +58,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         function loadMessages() {
-            document.getElementById("messages").style.backgroundColor = "#793775";
+            document.getElementById("messages").style.backgroundImage = "linear-gradient(145deg, #380139 90%, #b17abd)";
             document.getElementById("text-messages").style.color = "white";
-            document.getElementById("careers").style.backgroundColor = "#f2f2f2";
+            document.getElementById("careers").style.backgroundImage = "linear-gradient(145deg, #f2f2f2 90%, #f2f2f2)";
             document.getElementById("text-careers").style.color = "black";
         }
 
         function loadCareers() {
-            document.getElementById("careers").style.backgroundColor = "#793775";
+            document.getElementById("careers").style.backgroundImage = "linear-gradient(145deg, #380139 90%, #b17abd)";
             document.getElementById("text-careers").style.color = "white";
-            document.getElementById("messages").style.backgroundColor = "#f2f2f2";
+            document.getElementById("messages").style.backgroundImage = "linear-gradient(145deg, #f2f2f2 90%, #f2f2f2)";
             document.getElementById("text-messages").style.color = "black";
         }
     </script>
@@ -73,11 +79,6 @@
             trigger.on('click', function() {
                 var $this = $(this),
                     target = $(this).data('target');
-                console.log(target);
-
-                // setInterval(function() {
-                //     $("#content").load(target + '.php');
-                // }, 1000);
 
                 $("#content").load(target + '.php');
 

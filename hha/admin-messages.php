@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Careers - Howard Hermes</title>
+    <title>Messages - Howard Hermes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -23,11 +23,14 @@
             <div class="col-sm-12 logo-border" style="padding: 0px; margin-top: 40px"></div>
         </div>
         <div class="row" id="messages-data">
-            <script>
-                setInterval(function() {
-                    $("#messages-data").load("load_messages.php");
-                }, 5000);
-            </script>
+            <div class="col-sm-12">
+                <script>
+                    // $("#messages-data").load("load_messages.php");
+                    setInterval(function() {
+                        $("#messages-data").load("load_messages.php");
+                    }, 1000);
+                </script>
+            </div>
         </div>
     </div>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
