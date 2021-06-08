@@ -5,12 +5,15 @@ body {
 }
 
 .sidebar {
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
   border-right: 1px solid #dddddd;
   height: 100%;
   width: 20% !important;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 .sidebar ul li {
@@ -32,7 +35,6 @@ body {
 }
 
 .logo-border {
-  margin-top: 20px;
   border-top: 1px solid black;
 }
 
@@ -53,7 +55,12 @@ body {
 }
 
 .content {
-  padding: 20px;
+  padding: 70px;
+  margin-left: 20%;
+}
+
+.messages-card {
+  align-items: center;
 }
 
 /*# sourceMappingURL=admin.css.map */

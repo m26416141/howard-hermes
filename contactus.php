@@ -78,7 +78,7 @@
 						<label for="inputMessages">Messages</label>
 						<textarea class="form-text-area" rows="10" maxlength="200" type="text" name="messages" id="inputMessages" placeholder="Your messages"></textarea>
 						<!-- <input type="submit" name="submit"> -->
-						<button type="submit" name="submit" class="btn-block button-submit">Submit</button>
+						<button type="submit" name="submit" class="btn-block button-submit" onclick="loadPage()">Submit</button>
 					</form>
 				</div>
 			</div>

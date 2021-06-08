@@ -25,7 +25,7 @@
                         <i class='bx bx-menu'></i>
                     </div>
                 </div>
-                <div class="logo-border"></div>
+                <div class="logo-border" style="margin-top: 20px;"></div>
                 <ul class="list-group">
                     <li class="list-group-item" id="messages">
                         <a id="text-messages" href="#" data-target="admin-messages" onclick="loadMessages()">
@@ -43,7 +43,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="content" id="content">
+            <div class="col-sm content" id="content">
             </div>
         </div>
     </div>
@@ -73,6 +73,11 @@
             trigger.on('click', function() {
                 var $this = $(this),
                     target = $(this).data('target');
+                console.log(target);
+
+                // setInterval(function() {
+                //     $("#content").load(target + '.php');
+                // }, 1000);
 
                 $("#content").load(target + '.php');
 
