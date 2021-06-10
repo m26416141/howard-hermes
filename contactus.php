@@ -75,8 +75,15 @@
 						<input class="form-input" type="text" name="email" id="inputEmail" placeholder="Your email">
 						<label for="inputSubject">Subject</label>
 						<input class="form-input" type="text" name="subject" id="inputSubject" placeholder="Your subject">
-						<label for="inputMessages">Messages</label>
-						<textarea class="form-text-area" rows="10" maxlength="200" type="text" name="messages" id="inputMessages" placeholder="Your messages"></textarea>
+						<div class="row">
+							<div class="col-sm-6">
+								<label for="inputMessages">Messages</label>
+							</div>
+							<div class="col-sm-6">
+								<label style="float: right;"><span id="wcDisplay" style="font-weight: 100;">0</span> / 200</label>
+							</div>
+						</div>
+						<textarea id="inputMessages" class="form-text-area" rows="10" maxlength="200" type="text" name="messages" id="inputMessages" placeholder="Your messages" oninput="countWord()"></textarea>
 						<!-- <input type="submit" name="submit"> -->
 						<button type="submit" name="submit" class="btn-block button-submit" onclick="loadPage()">Submit</button>
 					</form>
@@ -149,6 +156,7 @@
 			scroll1 = scroll2;
 		};
 	</script>
+	<script src="js/wc.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
