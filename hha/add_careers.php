@@ -6,7 +6,7 @@ if (mysqli_connect_errno()) {
 } else {
     echo "connection success";
 }
-if (isset($_POST["submit"])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $careersName = $_POST["name"];
     $careersDescription = $_POST["description"];
     $careersDate = $_POST["date"];
