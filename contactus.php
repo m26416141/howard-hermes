@@ -48,26 +48,6 @@
 						Thank you for your interest in Howard Hermes Consulting. <br />
 						Please fill out the form below to ask a question or to report a technical problem.
 					</p>
-					<!-- <form method="POST">
-						<div>
-							<label for="inputName">NAME</label> <br />
-							<input type="text" name="contact_name" class="form-input" id="inputName" placeholder="Your name" />
-						</div>
-						<div>
-							<label for="inputEmail">EMAIL</label> <br />
-							<input type="email" name="contact_email" class="form-input" id="inputEmail" placeholder="Your email" />
-						</div>
-						<div>
-							<label for="inputSubject">SUBJECT</label> <br />
-							<input type="text" class="form-input" id="inputSubject" placeholder="Your email subject" />
-						</div>
-						<div>
-							<label for="inputMessages">MESSAGES</label> <br />
-							<textarea class="form-text-area" id="inputMessages" rows="10" placeholder="Your messages"></textarea>
-						</div>
-						<!-- <button class="btn-block button-submit">Submit</button>
-						<input type="submit" name="submit" class="button-submit">
-					</form> -->
 					<form method="POST">
 						<label for="inputName">Name</label>
 						<input class="form-input" type="text" name="name" id="inputName" placeholder="Your name">
@@ -85,7 +65,7 @@
 						</div>
 						<textarea id="inputMessages" class="form-text-area" rows="10" maxlength="200" type="text" name="messages" id="inputMessages" placeholder="Your messages" oninput="countWord()"></textarea>
 						<!-- <input type="submit" name="submit"> -->
-						<button type="submit" name="submit" class="btn-block button-submit" onclick="loadPage()">Submit</button>
+						<button type="submit" name="submit" class="btn-block button-submit">Submit</button>
 					</form>
 				</div>
 			</div>
@@ -167,13 +147,6 @@
 <?php
 //create connection
 $con = mysqli_connect("localhost", "root", "", "test");
-
-// if (mysqli_connect_errno()) {
-// 	echo "failed to connect!";
-// 	exit();
-// } else {
-// 	echo "connection success";
-// }
 
 if (isset($_POST["submit"])) {
 	$contactName = $_POST["name"];

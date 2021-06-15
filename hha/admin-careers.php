@@ -22,6 +22,34 @@
             </div>
             <div class="col-sm-12 logo-border" style="padding: 0px; margin-top: 40px"></div>
         </div>
+        <div class="row" style="padding: 0px; margin: 40px 0px 70px;">
+            <div class="col-sm-4" style="max-width: 400px; padding: 0px;">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-media">
+                            <img src="../assets/img/M-35.jpg" alt="" style="width: 100%; object-fit: cover; margin-bottom: 20px">
+                        </div>
+                        <h4 class="card-title services-card-title" style=" font-weight: 700; margin-bottom: 40px;">Associate Intern</h4>
+                        <div class="card-desc d-inline-block text-truncate" style="margin-bottom: 40px; width: calc(100% - 10px);">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odio temporibus voluptas error distinctio hic quae corrupti vero doloribus optio! Inventore ex quaerat modi blanditiis soluta maiores illum, ab velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odio temporibus voluptas error distinctio hic quae corrupti vero doloribus optio! Inventore ex quaerat modi blanditiis soluta maiores illum, ab velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                        <div style="margin-bottom: 70px;">
+                            <a class="about-us-link" href="#">Apply for this job &rarr;</a>
+                        </div>
+                        <div class="row" style="position: absolute; bottom: 0; width: 100%; margin-bottom: 10px;">
+                            <div class="col-sm-6">
+                                <img src="../assets/img/location.png" height="20px" alt="">
+                                <p style="display: inline-block; margin-left: 7px;">Surabaya</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <img src="../assets/img/clock-simple.png" height="20px" alt="">
+                                <p style="display: inline-block; margin-left: 7px;">14-04-45</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="fab-add" id="fab">
             <!-- <span>+</span> -->
             <!-- <img src=" ../assets/img/instagram.png" alt="" style="height: 20px; filter: invert(100%); display: block; margin-left: auto; margin-right: auto" /> -->
@@ -82,7 +110,6 @@
                                             alert("error add");
                                         }
                                     });
-                                    console.log($('form').serialize());
                                 });
                             });
                         </script>

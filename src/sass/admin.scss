@@ -111,7 +111,7 @@ body {
 }
 
 .row-form-add {
-	position: absolute;
+	position: fixed;
 	bottom: 40px;
 	right: 6%;
 	transform: translate(0%, -13%);
@@ -215,4 +215,70 @@ body {
 	// i {
 	// 	transform: rotate(45deg);
 	// }
+}
+
+.card {
+	border-radius: 0px;
+	height: 100%;
+	border: 1px solid #dddddd;
+	transition: 0.5s;
+	.card-media {
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
+	.card-desc {
+		transition: 0.5s;
+	}
+}
+
+.card-title {
+	font-family: "Noto Sans";
+	margin-top: 20px;
+}
+
+.about-us-link {
+	text-decoration: none;
+	font-family: "Noto Sans";
+	font-weight: 700;
+	text-decoration: none;
+	color: #793775;
+	transition: 0.3s;
+	padding-bottom: 2px;
+	border-bottom: 2px solid transparent;
+}
+
+.about-us-link:hover {
+	text-decoration: none;
+	font-family: "Noto Sans";
+	text-decoration: none;
+	color: #793775;
+	padding-bottom: 4px;
+	border-bottom: 2px solid #793775;
+}
+// .card-desc {
+// 	text-overflow: ellipsis;
+// 	overflow: hidden;
+// 	white-space: nowrap;
+// }
+.card:hover {
+	background-color: white;
+	border: 1px transparent #dddddd;
+	box-shadow: 0px 0px 10px 5px #7070704d;
+	width: 400px;
+	.card-media {
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+	}
+	.card-desc {
+		white-space: normal;
+	}
+	.card-title {
+		margin-top: 20px;
+	}
+}
+
+.card-body {
+	padding: 20px;
 }
