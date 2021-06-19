@@ -152,8 +152,10 @@ if (isset($_POST["submit"])) {
 	$contactName = $_POST["name"];
 	$contactEmail = $_POST["email"];
 	$contactSubject = $_POST["subject"];
+	$contactMssg = $_POST["messages"];
 
-	$sql = "INSERT into contact (name, email, subject) VALUES ('$contactName', '$contactEmail', '$contactSubject')";
+	$sql = "INSERT into contact (name, email, subject, messages)
+	VALUES ('$contactName', '$contactEmail', '$contactSubject', '$contactMssg')";
 
 	try {
 		mysqli_query($con, $sql);

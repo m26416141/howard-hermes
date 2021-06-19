@@ -23,7 +23,7 @@ if ($check_messages) {
                                 <?php
                                 $value = $row['subject'];
                                 $text_bold = str_replace($row['subject'], "<b>$value</b>", $row['subject']);
-                                $mssg_concat = $text_bold . " - " . $row['subject'];
+                                $mssg_concat = $text_bold . " - " . $row['messages'];
                                 // $mssg = substr($mssg_concat, 0, 70);
                                 echo $mssg_concat;
                                 ?>
@@ -39,16 +39,3 @@ if ($check_messages) {
     echo "No messages found";
 }
 ?>
-
-<!-- <p class="card-text" style="display: inline-block; margin-bottom: 0px; font-weight: 700">
-<?php
-$sbjct = substr($row['subject'], 0, 20);
-echo "$sbjct..";
-?>
-</p> -
-<p class="card-text" style="display: inline-block; margin-bottom: 0px;">
-    <?php
-    $mssg = substr($row['subject'], 0, 20);
-    echo "$mssg..";
-    ?>
-</p> -->
