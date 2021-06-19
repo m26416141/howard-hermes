@@ -114,6 +114,7 @@ body {
 	position: fixed;
 	bottom: 40px;
 	right: 6%;
+	top: 140px;
 	transform: translate(0%, -13%);
 	background: white;
 	// border: 1px solid black;
@@ -217,12 +218,15 @@ body {
 	// }
 }
 
-.card {
+.card-careers {
 	border-radius: 0px;
 	height: 100%;
 	border: 1px solid #dddddd;
 	transition: 0.5s;
-	.card-media {
+	.card-body-careers {
+		padding: 20px;
+	}
+	.card-media-careers {
 		visibility: visible;
 		opacity: 1;
 		transition: visibility 0s, opacity 0.5s linear;
@@ -230,11 +234,10 @@ body {
 	.card-desc {
 		transition: 0.5s;
 	}
-}
-
-.card-title {
-	font-family: "Noto Sans";
-	margin-top: 20px;
+	.card-title-careers {
+		font-family: "Noto Sans";
+		margin-top: 20px;
+	}
 }
 
 .about-us-link {
@@ -256,17 +259,17 @@ body {
 	padding-bottom: 4px;
 	border-bottom: 2px solid #793775;
 }
-// .card-desc {
-// 	text-overflow: ellipsis;
-// 	overflow: hidden;
-// 	white-space: nowrap;
-// }
-.card:hover {
+// // .card-desc {
+// // 	text-overflow: ellipsis;
+// // 	overflow: hidden;
+// // 	white-space: nowrap;
+// // }
+.card-careers:hover {
 	background-color: white;
 	border: 1px transparent #dddddd;
 	box-shadow: 0px 0px 10px 5px #7070704d;
 	width: 400px;
-	.card-media {
+	.card-media-careers {
 		visibility: hidden;
 		opacity: 0;
 		height: 0;
@@ -274,11 +277,7 @@ body {
 	.card-desc {
 		white-space: normal;
 	}
-	.card-title {
+	.card-title-careers {
 		margin-top: 20px;
 	}
-}
-
-.card-body {
-	padding: 20px;
 }

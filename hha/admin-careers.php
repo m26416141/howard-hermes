@@ -24,12 +24,12 @@
         </div>
         <div class="row" style="padding: 0px; margin: 40px 0px 70px;">
             <div class="col-sm-4" style="max-width: 400px; padding: 0px;">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-media">
+                <div class="card-careers card">
+                    <div class="card-body-careers card-body">
+                        <div class="card-media-careers card-media">
                             <img src="../assets/img/M-35.jpg" alt="" style="width: 100%; object-fit: cover; margin-bottom: 20px">
                         </div>
-                        <h4 class="card-title services-card-title" style=" font-weight: 700; margin-bottom: 40px;">Associate Intern</h4>
+                        <h4 class="card-title-careers card-title" style=" font-weight: 700; margin-bottom: 40px;">Associate Intern</h4>
                         <div class="card-desc d-inline-block text-truncate" style="margin-bottom: 40px; width: calc(100% - 10px);">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odio temporibus voluptas error distinctio hic quae corrupti vero doloribus optio! Inventore ex quaerat modi blanditiis soluta maiores illum, ab velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut odio temporibus voluptas error distinctio hic quae corrupti vero doloribus optio! Inventore ex quaerat modi blanditiis soluta maiores illum, ab velit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         </div>

@@ -104,6 +104,7 @@ body {
   position: fixed;
   bottom: 40px;
   right: 6%;
+  top: 140px;
   transform: translate(0%, -13%);
   background: white;
   padding: 40px;
@@ -191,22 +192,24 @@ body {
   visibility: visible;
 }
 
-.card {
+.card-careers {
   border-radius: 0px;
   height: 100%;
   border: 1px solid #dddddd;
   transition: 0.5s;
 }
-.card .card-media {
+.card-careers .card-body-careers {
+  padding: 20px;
+}
+.card-careers .card-media-careers {
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.5s linear;
 }
-.card .card-desc {
+.card-careers .card-desc {
   transition: 0.5s;
 }
-
-.card-title {
+.card-careers .card-title-careers {
   font-family: "Noto Sans";
   margin-top: 20px;
 }
@@ -231,26 +234,22 @@ body {
   border-bottom: 2px solid #793775;
 }
 
-.card:hover {
+.card-careers:hover {
   background-color: white;
   border: 1px transparent #dddddd;
   box-shadow: 0px 0px 10px 5px #7070704d;
   width: 400px;
 }
-.card:hover .card-media {
+.card-careers:hover .card-media-careers {
   visibility: hidden;
   opacity: 0;
   height: 0;
 }
-.card:hover .card-desc {
+.card-careers:hover .card-desc {
   white-space: normal;
 }
-.card:hover .card-title {
+.card-careers:hover .card-title-careers {
   margin-top: 20px;
-}
-
-.card-body {
-  padding: 20px;
 }
 
 /*# sourceMappingURL=admin.css.map */
