@@ -252,4 +252,60 @@ body {
   margin-top: 20px;
 }
 
+.modal-header {
+  background-color: white !important;
+  padding: 30px;
+  border-bottom: none;
+}
+.modal-header .modal-title {
+  color: black !important;
+}
+.modal-header .close {
+  padding: 0px;
+  margin: 0px;
+}
+
+.modal-backdrop {
+  background-color: white;
+  opacity: 0 !important;
+}
+
+.modal-content {
+  box-shadow: 0px 7px 40px #88888870;
+}
+
+.modal-body {
+  padding: 0px 30px;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  border-top: none;
+  justify-content: flex-end;
+  border-bottom: 10px solid #793775;
+  padding: 30px;
+}
+
+.modal-footer > :not(:first-child) {
+  margin: 0px;
+}
+
+.btn-cancel {
+  border: 2px solid #d4d4d4;
+  background-color: transparent;
+  padding: 13px 20px;
+  margin: 0px;
+  margin-right: 20px !important;
+  border-radius: 0px;
+}
+
+.btn-submit {
+  background-image: linear-gradient(145deg, #380139 90%, #b17abd);
+  padding: 13px 20px;
+  border: 2px solid black;
+  color: white;
+  margin: 0px;
+  border-radius: 0px;
+}
+
 /*# sourceMappingURL=admin.css.map */

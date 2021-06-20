@@ -27,13 +27,16 @@ SET time_zone = "+00:00";
 -- Table structure for table `contact`
 --
 
-CREATE TABLE `contact` (
-  `id` int(11) NOT NULL,
-  `name` varchar(32) NOT NULL,
-  `email` varchar(225) NOT NULL,
-  `subject` varchar(255) DEFAULT NULL,
-  `messages` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- CREATE TABLE `contact` (
+--   `id` int(11) NOT NULL,
+--   `name` varchar(32) NOT NULL,
+--   `email` varchar(225) NOT NULL,
+--   `subject` varchar(255) DEFAULT NULL,
+--   `messages` varchar(255) DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `contact`
+ADD `messages` varchar(255) DEFAULT NULL;
 
 --
 -- Indexes for dumped tables
@@ -42,8 +45,8 @@ CREATE TABLE `contact` (
 --
 -- Indexes for table `contact`
 --
-ALTER TABLE `contact`
-  ADD PRIMARY KEY (`id`);
+-- ALTER TABLE `contact`
+--   ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
