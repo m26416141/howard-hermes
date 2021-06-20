@@ -17,10 +17,35 @@
 <body>
     <div class="container-fluid">
         <div class="row" style="margin-bottom: 20px;">
-            <div class="col-sm-12" style="padding: 0px;">
+            <div class="col-sm-6" style="padding: 0px;">
                 <h4 style="font-weight: 700; font-size: 20px">Messages</h4>
             </div>
+            <div class="col-sm-6" style="padding: 0px;">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="float: right">Clear All</button>
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-sm-12 logo-border" style="padding: 0px; margin-top: 40px"></div>
+        </div>
+        <div class="row">
+
         </div>
         <div class="row" id="messages-data">
             <div class="col-sm-12">
