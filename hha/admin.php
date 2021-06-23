@@ -51,7 +51,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm content" id="content">
+            <div class="col-sm content" id="content" style="width: calc(70% - 200px);">
                 <?php include('admin-messages.php'); ?>
             </div>
         </div>
@@ -59,15 +59,25 @@
     <div class="modal fade" id="modal-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-details-content" style="border-radius: 0px; border: none;">
-                <div class="modal-header" style="border-top-left-radius: 0px; border-top-right-radius: 0px;">
-                    <h5 class="modal-title" id="name" style="font-weight: 700;">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="text-shadow: none; background-color: transparent">
-                        <i class='bx bxs-x-circle'></i>
-                    </button>
+                <div class="modal-header" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom: 2px solid #f4f4f4">
+                    <div class="row">
+                        <div class="col-sm-12" style="margin-bottom: 20px;">
+                            <h5 class="modal-title" id="subject" style="font-weight: 700;">Modal title</h5>
+                        </div>
+                        <!-- <div class="col-sm-6" style="float: right;">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="text-shadow: none; background-color: transparent; float: right;">
+                                <i class='bx bxs-x-circle'></i>
+                            </button>
+                        </div> -->
+                        <div class="col-sm-12">
+                            <p id="name" style="margin-bottom: 0px; font-weight: 700"></p>
+                            <p id="email-modal" style="margin-bottom: 0px;"></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="padding-top: 20px">
                     <div id="subject"></div>
-                    <div></div>
+                    <div id="messages-modal"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary btn-block" data-dismiss="modal">Close</button>

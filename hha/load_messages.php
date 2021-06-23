@@ -18,46 +18,24 @@ if ($check_messages) {
             <div class="card" id="card-details" data-id=' . $row['id'] . ' style="border-radius: 0px; border: 0px; border-bottom: 1px solid #dddddd; padding-bottom: 10px">
                 <div class="card-body" style="padding: 0px;">
                     <div class="row messages-card" style="padding: 0px; margin: 0px">
-                        <div class="col-sm-4" style="padding: 0px;">
-                            <p class="card-title" style="display: inline-block; font-weight: 700; margin-bottom: 0px; color: #793775;">
+                        <div class="col-sm-3" style="padding: 0px;">
+                            <p class="card-text" style="display: inline-block; font-weight: 700; margin-bottom: 0px; color: #793775;">
                                 ' . $row['name'] . '
                             </p>
                         </div>
-                        <div class="col-sm-4" style="padding: 0px;">
+                        <div class="col-sm-3" style="padding: 0px;">
+                            <p class="card-text d-inline-block text-truncate" style="display: inline-block; font-weight: 700; margin-bottom: 0px; color: #793775; width: calc(100% - 10px);">
+                                ' . $row['email'] . '
+                            </p>
+                        </div>
+                        <div class="col-sm-6" style="padding: 0px;">
                             <p class="card-text d-inline-block text-truncate" style="display: inline-block; margin-bottom: 0px; width: calc(100% - 10px);">
                                 ' . $mssg_concat . '
                             </p>
                         </div>
-                        <div class="col-sm-4">
-                            <!--<button type="submit" name="submit" id="btn-details" class="btn-block btn-details" data-id=' . $row['id'] . '>Details &rarr;</button>-->
-                            <script>
-                                $(function() {
-                                    $("#card-details").on("click", function(e) {
-                                        var messagesId = $(this).data("id");
-                                        e.preventDefault();
-                                        $.ajax({
-                                            url: "details_messages.php",
-                                            method: "POST",
-                                            data: {
-                                                id: messagesId
-                                            },
-                                            success: function(data) {
-                                                // console.log("load success");
-                                                // console.log(' . $row['id'] . ');
-                                                data = JSON.parse(data);
-                                                // console.log(data["nama"]);
-                                                $("#name").html(data["nama"]);
-                                                $("#subject").html(data["subject"]);
-                                                $("#modal-details").modal("show");
-                                            },
-                                            error: function() {
-                                                alert("load failed");
-                                            }
-                                        })
-                                    })
-                                })
-                            </script>
-                        </div>
+                        <!-- <div class="col-sm-4">
+                            <button type="submit" name="submit" id="btn-details" class="btn-block btn-details" data-id=' . $row['id'] . '>Details &rarr;</button>
+                        </div> -->
                     </div>
                 </div>
             </div>

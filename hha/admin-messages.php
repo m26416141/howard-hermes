@@ -56,3 +56,33 @@
         </div>
     </div>
 </div>
+<script>
+    $(function() {
+        $("#messages-data").on("click", "#card-details", function(e) {
+            var messagesId = $(this).data("id");
+            e.preventDefault();
+            $.ajax({
+                url: "details_messages.php",
+                method: "POST",
+                data: {
+                    id: messagesId
+                },
+                success: function(data) {
+                    console.log("load success");
+                    // console.log(' . $row['
+                    //     id '] . ');
+                    data_json = JSON.parse(data);
+                    console.log(data_json["nama"]);
+                    $("#name").html(data_json["nama"]);
+                    $("#email-modal").html(data_json["email"]);
+                    $("#subject").html(data_json["subject"]);
+                    $("#messages-modal").html(data_json["messages"]);
+                    $("#modal-details").modal("show");
+                },
+                error: function() {
+                    alert("load failed");
+                }
+            })
+        })
+    })
+</script>
