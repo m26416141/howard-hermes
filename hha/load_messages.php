@@ -1,4 +1,3 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <?php
 $con = mysqli_connect("localhost", "root", "", "test");
 $query = "SELECT * FROM contact ORDER BY id DESC";
@@ -7,35 +6,64 @@ $check_messages = mysqli_num_rows($query_run) > 0;
 
 if ($check_messages) {
     while ($row = mysqli_fetch_array($query_run)) {
-        // echo $row['name'];
-?>
-        <div class="col-sm-12" style="width: 100%; padding: 0px; margin-bottom: 10px;">
-            <div class="card" style="border-radius: 0px; border: 0px; border-bottom: 1px solid #dddddd; padding-bottom: 10px">
+        $value = $row['subject'];
+        $text_bold = str_replace($row['subject'], "<b>$value</b>", $row['subject']);
+        $mssg_concat = $text_bold . " - " . $row['messages'];
+        // echo ($row['subject']);
+        echo '
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <div class="col-sm-12" style="width: 100%; padding: 0px; margin-bottom: 10px; cursor: pointer;">
+            <div class="card" id="card-details" data-id=' . $row['id'] . ' style="border-radius: 0px; border: 0px; border-bottom: 1px solid #dddddd; padding-bottom: 10px">
                 <div class="card-body" style="padding: 0px;">
                     <div class="row messages-card" style="padding: 0px; margin: 0px">
-                        <div class="col-sm-6" style="padding: 0px;">
+                        <div class="col-sm-4" style="padding: 0px;">
                             <p class="card-title" style="display: inline-block; font-weight: 700; margin-bottom: 0px; color: #793775;">
-                                <?php echo $row['name']; ?>
+                                ' . $row['name'] . '
                             </p>
                         </div>
-                        <div class="col-sm-6" style="padding: 0px;">
+                        <div class="col-sm-4" style="padding: 0px;">
                             <p class="card-text d-inline-block text-truncate" style="display: inline-block; margin-bottom: 0px; width: calc(100% - 10px);">
-                                <?php
-                                $value = $row['subject'];
-                                $text_bold = str_replace($row['subject'], "<b>$value</b>", $row['subject']);
-                                $mssg_concat = $text_bold . " - " . $row['messages'];
-                                // $mssg = substr($mssg_concat, 0, 70);
-                                echo $mssg_concat;
-                                ?>
+                                ' . $mssg_concat . '
                             </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <!--<button type="submit" name="submit" id="btn-details" class="btn-block btn-details" data-id=' . $row['id'] . '>Details &rarr;</button>-->
+                            <script>
+                                $(function() {
+                                    $("#card-details").on("click", function(e) {
+                                        var messagesId = $(this).data("id");
+                                        e.preventDefault();
+                                        $.ajax({
+                                            url: "details_messages.php",
+                                            method: "POST",
+                                            data: {
+                                                id: messagesId
+                                            },
+                                            success: function(data) {
+                                                // console.log("load success");
+                                                // console.log(' . $row['id'] . ');
+                                                data = JSON.parse(data);
+                                                // console.log(data["nama"]);
+                                                $("#name").html(data["nama"]);
+                                                $("#subject").html(data["subject"]);
+                                                $("#modal-details").modal("show");
+                                            },
+                                            error: function() {
+                                                alert("load failed");
+                                            }
+                                        })
+                                    })
+                                })
+                            </script>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-<?php
+        ';
     }
 } else {
     echo "No messages found";
 }
-?>

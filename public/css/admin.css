@@ -75,6 +75,10 @@ body {
   align-items: center;
 }
 
+#card-details {
+  cursor: pointer;
+}
+
 .fab-add {
   cursor: pointer;
   position: fixed;
@@ -271,7 +275,7 @@ body {
 }
 
 .modal-content {
-  box-shadow: 0px 7px 40px #88888870;
+  box-shadow: 0px 7px 100px 20px #88888870;
 }
 
 .modal-body {
@@ -306,6 +310,25 @@ body {
   color: white;
   margin: 0px;
   border-radius: 0px;
+}
+
+.btn-details {
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-weight: 700;
+  text-decoration: none;
+  color: #793775;
+  transition: 0.3s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  background-color: white;
+  border: 0px;
+  cursor: pointer;
+}
+
+.modal-details-content {
+  width: 500px;
+  box-shadow: 0px 7px 100px 20px #88888870;
 }
 
 /*# sourceMappingURL=admin.css.map */
