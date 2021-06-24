@@ -147,9 +147,10 @@ if (isset($_POST["submit"])) {
 	$contactEmail = $_POST["email"];
 	$contactSubject = $_POST["subject"];
 	$contactMssg = $_POST["messages"];
+	$contactDate = date("Y-m-d");
 
-	$sql = "INSERT into contact (name, email, subject, messages)
-	VALUES ('$contactName', '$contactEmail', '$contactSubject', '$contactMssg')";
+	$sql = "INSERT into contact (name, email, subject, messages, mssg_date)
+	VALUES ('$contactName', '$contactEmail', '$contactSubject', '$contactMssg', '$contactDate')";
 
 	try {
 		mysqli_query($con, $sql);

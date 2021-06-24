@@ -74,9 +74,11 @@
                     data_json = JSON.parse(data);
                     console.log(data_json["nama"]);
                     $("#name").html(data_json["nama"]);
-                    $("#email-modal").html(data_json["email"]);
+                    // $("#email-modal").html(data_json["email"]);
+                    $("#email-modal").html("[".concat(data_json["email"], "]"));
                     $("#subject").html(data_json["subject"]);
                     $("#messages-modal").html(data_json["messages"]);
+                    $("#date-modal").html(data_json["date"]);
                     $("#modal-details").modal("show");
                 },
                 error: function() {

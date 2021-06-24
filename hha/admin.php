@@ -59,7 +59,7 @@
     <div class="modal fade" id="modal-details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content modal-details-content" style="border-radius: 0px; border: none;">
-                <div class="modal-header" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom: 2px solid #f4f4f4">
+                <div class="modal-header" style="border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom: 2px solid #f4f4f4;">
                     <div class="row">
                         <div class="col-sm-12" style="margin-bottom: 20px;">
                             <h5 class="modal-title" id="subject" style="font-weight: 700;">Modal title</h5>
@@ -69,9 +69,13 @@
                                 <i class='bx bxs-x-circle'></i>
                             </button>
                         </div> -->
-                        <div class="col-sm-12">
-                            <p id="name" style="margin-bottom: 0px; font-weight: 700"></p>
-                            <p id="email-modal" style="margin-bottom: 0px;"></p>
+                        <div class="col-sm-9">
+                            <div style="display: flex; flex-direction: row; align-items:center; width: max-content">
+                                <p id="name" style="margin-bottom: 0px; font-weight: 700; font-size: 13px"></p>
+                                <p id="email-modal" style="margin-bottom: 0px; font-size: 13px; margin-left: 10px">
+                                </p>
+                            </div>
+                            <p id="date-modal" style="margin-bottom: 0px; margin-top: 20px; font-size: 13px"></p>
                         </div>
                     </div>
                 </div>

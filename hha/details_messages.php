@@ -9,7 +9,8 @@ if ($query_run) {
             "nama" => $row[1],
             "email" => $row[2],
             "subject" => $row[3],
-            "messages" => $row[4]
+            "messages" => $row[4],
+            "date" => $row[5]
         ];
         echo json_encode($return);
     }

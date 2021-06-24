@@ -23,14 +23,14 @@ if ($check_messages) {
                                 ' . $row['name'] . '
                             </p>
                         </div>
-                        <div class="col-sm-3" style="padding: 0px;">
-                            <p class="card-text d-inline-block text-truncate" style="display: inline-block; font-weight: 700; margin-bottom: 0px; color: #793775; width: calc(100% - 10px);">
-                                ' . $row['email'] . '
-                            </p>
-                        </div>
                         <div class="col-sm-6" style="padding: 0px;">
                             <p class="card-text d-inline-block text-truncate" style="display: inline-block; margin-bottom: 0px; width: calc(100% - 10px);">
                                 ' . $mssg_concat . '
+                            </p>
+                        </div>
+                        <div class="col-sm-3" style="padding: 0px;">
+                            <p class="card-text d-inline-block text-truncate" style="display: inline-block; font-weight: 700; margin-bottom: 0px; color: #793775; width: calc(100% - 10px); text-align: right;">
+                                ' . $row['mssg_date'] . '
                             </p>
                         </div>
                         <!-- <div class="col-sm-4">
