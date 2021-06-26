@@ -66,7 +66,6 @@
                 });
             </script>
         </div>
-
         <div class="row-form-add row">
             <div class="col-sm-12">
                 <div class="form-add-careers">

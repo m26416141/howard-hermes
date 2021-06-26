@@ -217,6 +217,7 @@ body {
 .row-form-add.fab-active {
 	opacity: 100;
 	visibility: visible;
+	overflow: scroll;
 	// i {
 	// 	transform: rotate(45deg);
 	// }
