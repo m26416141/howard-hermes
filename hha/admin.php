@@ -69,7 +69,7 @@
                                 <i class='bx bxs-x-circle'></i>
                             </button>
                         </div> -->
-                        <div class="col-sm-9">
+                        <div class="col-sm-12">
                             <div style="display: flex; flex-direction: row; align-items:center; width: max-content">
                                 <p id="name" style="margin-bottom: 0px; font-weight: 700; font-size: 13px"></p>
                                 <p id="email-modal" style="margin-bottom: 0px; font-size: 13px; margin-left: 10px">

@@ -1,11 +1,11 @@
 <?php
 $con = mysqli_connect("localhost", "root", "", "test");
-if (mysqli_connect_errno()) {
-    echo "failed to connect!";
-    exit();
-} else {
-    echo "connection success";
-}
+// if (mysqli_connect_errno()) {
+//     echo "failed to connect!";
+//     exit();
+// } else {
+//     echo "connection success";
+// }
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $careersName = $_POST["name"];
     $careersDescription = $_POST["description"];

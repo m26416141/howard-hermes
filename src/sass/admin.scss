@@ -287,7 +287,19 @@ body {
 	}
 }
 
-//modal card @ admin-careers
+.tooltip-delete {
+	// background: lightblue;
+	border: 1px solid black;
+	border-radius: 50%;
+	display: inline-flex;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+}
+
+//modal card @ admin-messages
 .modal-header {
 	background-color: white !important;
 	padding: 30px;
@@ -301,14 +313,16 @@ body {
 	}
 }
 
-.modal-backdrop {
-	background-color: white;
-	opacity: 0 !important;
-}
+// .modal-backdrop {
+// 	background-color: rgb(0, 0, 0);
+// 	// opacity: 20 !important;
+// }
 
-.modal-content {
-	box-shadow: 0px 7px 100px 20px #88888870;
-}
+// $modal-backdrop-bg: red;
+
+// .modal-content {
+// 	box-shadow: 0px 7px 100px 20px #88888870;
+// }
 
 .modal-body {
 	padding: 0px 30px;

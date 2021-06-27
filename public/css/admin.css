@@ -257,6 +257,17 @@ body {
   margin-top: 20px;
 }
 
+.tooltip-delete {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
 .modal-header {
   background-color: white !important;
   padding: 30px;
@@ -268,15 +279,6 @@ body {
 .modal-header .close {
   padding: 0px;
   margin: 0px;
-}
-
-.modal-backdrop {
-  background-color: white;
-  opacity: 0 !important;
-}
-
-.modal-content {
-  box-shadow: 0px 7px 100px 20px #88888870;
 }
 
 .modal-body {
