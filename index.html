@@ -19,9 +19,22 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<!-- <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet" /> -->
 		<link rel="stylesheet" href="public/css/home.css" />
+		<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	</head>
 
 	<body>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"
+		></script>
+		<!-- <script src="js/wc.js"></script> -->
 <!-- navigation bar -->
 		<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
 			<a class="navbar-brand" href="index.html" style="margin: 0px 40px 0px 20px">
@@ -92,8 +105,8 @@
 				</div>
 				<div class="col-sm-12 col-introduction-2" style="background-color: white; margin: 10px 0px 30px 0px;">
 					<hr style="background-color: black; margin: 0px 100px 40px 100px" />
-					<a class="purpose-link" href="#" style="color: #380139; font-weight: 200; font-size: 15px;">Our Purpose &rarr;</a>
-					<p class="intro-definition" style="margin: 20px 20px 50px 20px">
+					<p style="color: #380139; font-weight: 700; font-size: 30px;">Who We Are</p>
+					<p class="intro-definition" style="font-weight: 200; font-size: 15px; margin: 20px 20px 50px 20px">
 						To transform organization into Excelent Organization by partnering <br />with our clients to build Mindful Leadership across all platforms.
 					</p>
 				</div>
@@ -105,13 +118,13 @@
 				</div>
 				<div class="col-sm-6 col-intro-2-desc" style="background-image: linear-gradient(130deg, #380139 50%, #b17abd)">
 					<p style="color: white; font-weight: 700; font-size: 50px; padding-bottom: 20px">Our History</p>
-					<p style="color: white; padding-bottom: 20px">
+					<p style="color: white; padding-bottom: 20px; font-size: 17px;">
 						Being present in today's disruptive era, where things are shifting rapidly, requires us to be agile. Not only that, the organic nature of the organization, consisting of many
-						mindsets that come from each member of the organization, results in a fragmented organization focus. <br />
+						mindsets that come from each member of the organization, results in a fragmented organization focus. <br /><br/>
 						Organization with a fragmented focus will not be able to survive the long term, therefore, Howard Hermes, was founded to help organizations stay focused on carrying out a
 						planned and measured transformations.
 					</p>
-					<a class="our-history-link" href="#" style="color: #b17abd;">Explore our insights on organization &rarr;</a>
+					<!-- <a class="our-history-link" href="#" style="color: #b17abd;">Explore our insights on organization &rarr;</a> -->
 				</div>
 			</div>
 <!-- (III) intro part 3 -->
@@ -317,7 +330,58 @@
             </div>
 <!-- (i) end of home page content -->
 		</div>
+		<div class="fab-add" id="fab">
+			<i class='bx bx-message-add' style="font-size: 40px; display: block; margin-left: auto; margin-right: auto; color: #793775; cursor: pointer;"></i>
+			<!-- <a href="#" onclick="toogleAddCareers()">hai</a> -->
+			<script>
+				document.getElementById("fab").addEventListener("click", function() {
+					console.log("button clicked");
+					var rotated = false;
+					var action = document.querySelector('.row-form-add');
+					action.classList.toggle('fab-active');
+					var action_fab = document.querySelector('.fab-add');
+					action_fab.classList.toggle('fab2-active');
+				});
+			</script>
+		</div>
+		<div class="row-form-add row">
+			<div class="col-sm-12">
+				<div class="form-add-careers">
+					<h4 style="font-family: 'Noto Sans'; font-weight: 700; margin-bottom: 30px">Messages</h4>
+					<form method="POST">
+						<label for="inputName">Name</label>
+						<input class="form-input" type="text" name="name" id="inputName" placeholder="Your name">
+						<label for="inputEmail">Email</label>
+						<input class="form-input" type="text" name="email" id="inputEmail" placeholder="Your email">
+						<label for="inputSubject">Subject</label>
+						<input class="form-input" type="text" name="subject" id="inputSubject" placeholder="Your subject">
+						<div class="row">
+							<div class="col-sm-6">
+								<label for="inputMessages">Messages</label>
+							</div>
+							<div class="col-sm-6">
+								<label style="float: right;"><span id="wcDisplay" style="font-weight: 100;">0</span> / 200</label>
+							</div>
+						</div>
+						<textarea id="inputMessages" class="form-text-area" rows="10" maxlength="200" type="text" name="messages" id="inputMessages" placeholder="Your messages" oninput="countWord()"></textarea>
+						<!-- <input type="submit" name="submit"> -->
+						<button type="submit" name="submit" class="btn-block button-submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
         <!-- <script src="/js/navbar-scroll.js"></script> -->
+		<script>
+			const cwords = document.getElementById("inputMessages");
+			const word_display = document.getElementById("wcDisplay");
+
+			function countWord() {
+				let text = cwords.value;
+				// text = text.trim();
+				const words = text;
+				word_display.innerText = words.length;
+			}
+		</script>
 		<script>
 			var scroll1 = window.pageYOffset;
 			var nav = document.querySelector('nav');
@@ -335,16 +399,6 @@
 				scroll1 = scroll2
 			}
 		</script>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-			crossorigin="anonymous"
-		></script>
+		
 	</body>
 </html>

@@ -336,4 +336,41 @@ body {
   box-shadow: 0px 7px 100px 20px #88888870;
 }
 
+.card-header:first-child {
+  border-radius: 0px;
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+.card-careers-header {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.col-header {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-careers-title {
+  margin-bottom: 0px;
+  background-color: white;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-careers-content {
+  background-color: white;
+  border: 1px solid #d4d4d4;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.btn .btn-careers-delete {
+  margin-left: 20px;
+}
+
 /*# sourceMappingURL=admin.css.map */
