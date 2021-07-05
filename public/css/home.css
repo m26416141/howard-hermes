@@ -331,6 +331,7 @@ body {
 }
 .row-form-add .form-input:focus {
   border: 1px solid #793775;
+  border-bottom: 4px solid #793775;
   border-radius: 0px;
 }
 .row-form-add .form-place {
@@ -341,9 +342,11 @@ body {
   margin-bottom: 10px;
   width: 100%;
   padding: 10px;
+  transition: 0.2s;
 }
 .row-form-add .form-place:focus {
   border: 1px solid #793775;
+  border-bottom: 4px solid #793775;
   border-radius: 0px;
 }
 .row-form-add .form-text-area {
@@ -356,7 +359,8 @@ body {
   padding: 20px;
 }
 .row-form-add .form-text-area:focus {
-  border: 1px solid #793775 !important;
+  border: 1px solid #793775;
+  border-bottom: 4px solid #793775;
   border-radius: 0px;
 }
 .row-form-add .form-control {

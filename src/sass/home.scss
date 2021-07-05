@@ -354,6 +354,7 @@ body {
 
 	.form-input:focus {
 		border: 1px solid #793775;
+		border-bottom: 4px solid #793775;
 		border-radius: 0px;
 	}
 
@@ -365,10 +366,12 @@ body {
 		margin-bottom: 10px;
 		width: 100%;
 		padding: 10px;
+		transition: 0.2s;
 	}
 
 	.form-place:focus {
 		border: 1px solid #793775;
+		border-bottom: 4px solid #793775;
 		border-radius: 0px;
 	}
 
@@ -383,7 +386,8 @@ body {
 	}
 
 	.form-text-area:focus {
-		border: 1px solid #793775 !important;
+		border: 1px solid #793775;
+		border-bottom: 4px solid #793775;
 		border-radius: 0px;
 	}
 
